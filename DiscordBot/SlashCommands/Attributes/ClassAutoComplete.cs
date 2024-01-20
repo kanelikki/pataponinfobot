@@ -5,16 +5,22 @@ namespace DiscordBot.SlashCommands
 {
     public class ClassAutoComplete : AutocompleteHandler
     {
+        private static string[] _classes = new string[]
+        {
+            "Yarida", "Taterazay", "Yumiyacha", "Kibadda", "Destrobo", "Piekron", "Wooyari", "Pyokorider", "Cannassault", "Charibasa",
+            "Guardira", "Tondenga", "Myamsar", "Bowmunk", "Grenburr", "Alosson", "Wondabarappa", "Jamsch", "Oohoroc", "Pingrek", "Cannogabang",
+            "Ravenous", "Sonarchy", "Ragewolf", "Naughtyfins", "Slogturtle", "CovetHiss", "Buzzcrave"
+        };
         private static IEnumerable<AutocompleteResult> _classList;
         private static IEnumerable<AutocompleteResult> GetClassList()
         {
             if (_classList == null)
             {
                 var classList = new List<AutocompleteResult>();
-                foreach (PataClass pataClass in Enum.GetValues(typeof(PataClass)))
+                foreach (var cl in _classes)
                 {
-                    string name = Enum.GetName(pataClass);
-                    classList.Add(new AutocompleteResult(name, name));
+                    //AutoCompleteResult works when value is ALSO string
+                    classList.Add(new AutocompleteResult(cl, cl));
                 }
                 _classList = classList;
             }
@@ -22,10 +28,10 @@ namespace DiscordBot.SlashCommands
         }
         public override async Task<AutocompletionResult> GenerateSuggestionsAsync(IInteractionContext context, IAutocompleteInteraction autocompleteInteraction, IParameterInfo parameter, IServiceProvider services)
         {
-            
             return AutocompletionResult.FromSuccess(
-                GetClassList().Where(s => s.Name.StartsWith((string)autocompleteInteraction.Data.Current.Value)).Take(25)
+                    GetClassList().Where(s => s.Name.StartsWith((string)autocompleteInteraction.Data.Current.Value)).Take(10)
                 );
         }
+        internal static bool IsValidClassName(string className) => Array.IndexOf(_classes, className) > -1;
     }
 }

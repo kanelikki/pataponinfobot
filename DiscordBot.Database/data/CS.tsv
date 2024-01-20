@@ -1,0 +1,30 @@
+Class	Level	Group	CS Name	Prerequest	Exp	Training Time	Doi Dupe	Trains From	Training Method	Note
+Yarida	1		Two Spears	Must be Lvl 5	240		True	Throwing spears (any attack/defense)	Attack speed vs Iron Door (416 times)	
+Yarida	2		Three Spears	Complete CS1	80		True	Throwing spears (any attack/defense)	Attack speed vs Iron Door (1,250 times)	
+Yarida	3		Four Spears	Complete CS2	40		True	Throwing spears (any attack/defense)	Attack speed vs Iron Door (2,500 times)	
+Yarida	4		Five Spears	Complete CS3	20		True	Throwing spears (any attack/defense)	Attack speed vs Iron Door (5,000 times)	
+Piekron	1		Leaping Spear	Must be Lvl 7	320	10 minutes, 24 seconds	True	Successful charged attack/defense with weapon	Attack speed vs Iron Door (312 times)	Does not change with Yarida's CS. Train time considers 2 throws in 4 seconds.
+Piekron	2		Spear BOOM	Complete CS1	40	?	True	Successful charged attack/defense with weapon	Attack speed vs Iron Door (YariCS=500 times)	(Affected by Yarida CS. +40 per spear thrown)
+Piekron	3		Spear BA-BOOM	Complete CS2	20	?	True	Successful charged attack/defense with weapon	Attack speed vs Iron Door (YariCS=1000 times)	(Affected by Yarida CS. +20 per spear thrown)
+Piekron	4		Spear BA-BA-BOOM	Complete CS3	10	?	True	Successful charged attack/defense with weapon	Attack speed vs Iron Door (YariCS=2000 times)	(Affected by Yarida CS. +10 per spear thrown)
+Wooyari	1		Two Strike	Must be Lvl 9	480	13 minutes, 52 seconds	True	Successful fever attack/charged non-fever attack	Iron Door (208 times)	
+Wooyari	2		Three Strike	Complete CS1	240	27 minutes, 44 seconds	True	Successful fever attack/charged non-fever attack	Iron Door (416 times)	
+Wooyari	3		Four Strike	Complete CS2	120	55 minutes, 36 seconds	True	Successful fever attack/charged non-fever attack	Iron Door (834 times)	
+Wooyari	4		Five Strike	Complete CS3	60	111 minutes, 4 seconds	True	Successful fever attack/charged non-fever attack	Iron Door (1,666 times)	
+Wooyari	5		Six Strike	Complete CS4	30	222 minutes, 12 seconds	True	Successful fever attack/charged non-fever attack	Iron Door (3,333 times)	
+Kibadda	1		Assault Hits 1	Must be Lvl 5	240	27 minutes, 44 seconds	True	Charged non-fever attack/defense, any fever attack	Anywhere (416 times)	
+Kibadda	2		Assault Hits 2	Complete CS1	120	55 minutes, 36 seconds	True	Charged non-fever attack/defense, any fever attack	Anywhere (834 times)	
+Kibadda	3		Assault Hits 3	Complete CS2	60	111 minutes, 4 seconds	True	Charged non-fever attack/defense, any fever attack	Anywhere (1,666 times)	
+Kibadda	4		Assault Hits 4	Complete CS3	30	222 minutes, 12 seconds	True	Charged non-fever attack/defense, any fever attack	Anywhere (3,333 times)	
+Pyokorider	1		Giddy Up 1	Must be Lvl 10	300	22 minutes, 12 seconds	True	Perfect march command	Command cancel can cut train time in half	333 march commands
+Pyokorider	2		Giddy Up 2	Complete CS1	100	66 minutes, 40 seconds	True	Perfect march command	Command cancel can cut train time in half	1000 march commands
+Pyokorider	3		Giddy Up 3	Complete CS2	50	133 minutes, 20 seconds	True	Perfect march command	Command cancel can cut train time in half	2000 march commands
+Pyokorider	4		Giddy Up 4	Complete CS3	25	266 minutes, 40 seconds	True	Perfect march command	Command cancel can cut train time in half	4000 march commands
+Cannassault	1		Backbone 1	Must be Lvl 9	180	?	False	Attack/Defend in Fever against Knockback	Defense Practice	Unreliable Class Skill to train; gain is erratic
+Cannassault	2		Backbone 2	Complete CS1	90	?	False	Attack/Defend in Fever against Stagger	Defense Practice	Unreliable Class Skill to train; gain is erratic
+Cannassault	3		Backbone 3	Complete CS2	30	?	False	Attack/Defend in Fever against Freeze	Snoworb Cannons	Unreliable Class Skill to train; gain is erratic
+Cannassault	4		Backbone 4	Complete CS3	10	?	True	Attack/Defend in Fever against Fire	Stand in Fire, Archfiend of Restraint	Unreliable Class Skill to train; gain is erratic
+Charibasa	1		Pyokora Spirit	Must be Lvl 14	300	22 minutes, 12 seconds	True	March command	Command cancel can cut train time in half	
+Charibasa	2		Yaripon Spirit	Complete CS1	150	44 minutes, 24 seconds	True	Throwing spears (any attack/defense)	Iron Door	Does not gain more with amount of spears thrown.
+Charibasa	3		Chariot Attack	Complete CS2	200	?	True	Successfully deal damage with chariot wheel	Burn% and Grass Grower to iron door in DoP	
+Charibasa	4		Kanokyon Spirit	Complete CS3	10	?	True	Fever Attacking/Defending/Partying against status	Burn% and Grass Grower to iron door in DoP	Only applies against trained Backbone statuses.
