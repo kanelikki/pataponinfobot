@@ -1,30 +1,127 @@
-Class	Level	Group	CS Name	Prerequest	Exp	Training Time	Doi Dupe	Trains From	Training Method	Note
-Yarida	1		Two Spears	Must be Lvl 5	240		True	Throwing spears (any attack/defense)	Attack speed vs Iron Door (416 times)	
-Yarida	2		Three Spears	Complete CS1	80		True	Throwing spears (any attack/defense)	Attack speed vs Iron Door (1,250 times)	
-Yarida	3		Four Spears	Complete CS2	40		True	Throwing spears (any attack/defense)	Attack speed vs Iron Door (2,500 times)	
-Yarida	4		Five Spears	Complete CS3	20		True	Throwing spears (any attack/defense)	Attack speed vs Iron Door (5,000 times)	
-Piekron	1		Leaping Spear	Must be Lvl 7	320	10 minutes, 24 seconds	True	Successful charged attack/defense with weapon	Attack speed vs Iron Door (312 times)	Does not change with Yarida's CS. Train time considers 2 throws in 4 seconds.
-Piekron	2		Spear BOOM	Complete CS1	40	?	True	Successful charged attack/defense with weapon	Attack speed vs Iron Door (YariCS=500 times)	(Affected by Yarida CS. +40 per spear thrown)
-Piekron	3		Spear BA-BOOM	Complete CS2	20	?	True	Successful charged attack/defense with weapon	Attack speed vs Iron Door (YariCS=1000 times)	(Affected by Yarida CS. +20 per spear thrown)
-Piekron	4		Spear BA-BA-BOOM	Complete CS3	10	?	True	Successful charged attack/defense with weapon	Attack speed vs Iron Door (YariCS=2000 times)	(Affected by Yarida CS. +10 per spear thrown)
-Wooyari	1		Two Strike	Must be Lvl 9	480	13 minutes, 52 seconds	True	Successful fever attack/charged non-fever attack	Iron Door (208 times)	
-Wooyari	2		Three Strike	Complete CS1	240	27 minutes, 44 seconds	True	Successful fever attack/charged non-fever attack	Iron Door (416 times)	
-Wooyari	3		Four Strike	Complete CS2	120	55 minutes, 36 seconds	True	Successful fever attack/charged non-fever attack	Iron Door (834 times)	
-Wooyari	4		Five Strike	Complete CS3	60	111 minutes, 4 seconds	True	Successful fever attack/charged non-fever attack	Iron Door (1,666 times)	
-Wooyari	5		Six Strike	Complete CS4	30	222 minutes, 12 seconds	True	Successful fever attack/charged non-fever attack	Iron Door (3,333 times)	
-Kibadda	1		Assault Hits 1	Must be Lvl 5	240	27 minutes, 44 seconds	True	Charged non-fever attack/defense, any fever attack	Anywhere (416 times)	
-Kibadda	2		Assault Hits 2	Complete CS1	120	55 minutes, 36 seconds	True	Charged non-fever attack/defense, any fever attack	Anywhere (834 times)	
-Kibadda	3		Assault Hits 3	Complete CS2	60	111 minutes, 4 seconds	True	Charged non-fever attack/defense, any fever attack	Anywhere (1,666 times)	
-Kibadda	4		Assault Hits 4	Complete CS3	30	222 minutes, 12 seconds	True	Charged non-fever attack/defense, any fever attack	Anywhere (3,333 times)	
-Pyokorider	1		Giddy Up 1	Must be Lvl 10	300	22 minutes, 12 seconds	True	Perfect march command	Command cancel can cut train time in half	333 march commands
-Pyokorider	2		Giddy Up 2	Complete CS1	100	66 minutes, 40 seconds	True	Perfect march command	Command cancel can cut train time in half	1000 march commands
-Pyokorider	3		Giddy Up 3	Complete CS2	50	133 minutes, 20 seconds	True	Perfect march command	Command cancel can cut train time in half	2000 march commands
-Pyokorider	4		Giddy Up 4	Complete CS3	25	266 minutes, 40 seconds	True	Perfect march command	Command cancel can cut train time in half	4000 march commands
-Cannassault	1		Backbone 1	Must be Lvl 9	180	?	False	Attack/Defend in Fever against Knockback	Defense Practice	Unreliable Class Skill to train; gain is erratic
-Cannassault	2		Backbone 2	Complete CS1	90	?	False	Attack/Defend in Fever against Stagger	Defense Practice	Unreliable Class Skill to train; gain is erratic
-Cannassault	3		Backbone 3	Complete CS2	30	?	False	Attack/Defend in Fever against Freeze	Snoworb Cannons	Unreliable Class Skill to train; gain is erratic
-Cannassault	4		Backbone 4	Complete CS3	10	?	True	Attack/Defend in Fever against Fire	Stand in Fire, Archfiend of Restraint	Unreliable Class Skill to train; gain is erratic
-Charibasa	1		Pyokora Spirit	Must be Lvl 14	300	22 minutes, 12 seconds	True	March command	Command cancel can cut train time in half	
-Charibasa	2		Yaripon Spirit	Complete CS1	150	44 minutes, 24 seconds	True	Throwing spears (any attack/defense)	Iron Door	Does not gain more with amount of spears thrown.
-Charibasa	3		Chariot Attack	Complete CS2	200	?	True	Successfully deal damage with chariot wheel	Burn% and Grass Grower to iron door in DoP	
-Charibasa	4		Kanokyon Spirit	Complete CS3	10	?	True	Fever Attacking/Defending/Partying against status	Burn% and Grass Grower to iron door in DoP	Only applies against trained Backbone statuses.
+Class	Level	Group	CS Name	Prerequest	Exp	Training Time	Doi Dupe	Trains From	Training Method	Note	Detail	
+Yarida	1		Two Spears	Must be Lvl 5	240		True	Throwing spears (any attack/defense)	Attack speed vs Iron Door (416 times)			
+Yarida	2		Three Spears	Complete CS1	80		True	Throwing spears (any attack/defense)	Attack speed vs Iron Door (1,250 times)			
+Yarida	3		Four Spears	Complete CS2	40		True	Throwing spears (any attack/defense)	Attack speed vs Iron Door (2,500 times)			
+Yarida	4		Five Spears	Complete CS3	20		True	Throwing spears (any attack/defense)	Attack speed vs Iron Door (5,000 times)			
+Piekron	1		Leaping Spear	Must be Lvl 7	320	10 minutes, 24 seconds	True	Successful charged attack/defense with weapon	Attack speed vs Iron Door (312 times)	Does not change with Yarida's CS. Train time considers 2 throws in 4 seconds.	 	 
+Piekron	2		Spear BOOM	Complete CS1	40	?	True	Successful charged attack/defense with weapon	Attack speed vs Iron Door (YariCS=500 times)	(Affected by Yarida CS. +40 per spear thrown)	Damage x1.2, +Lightning elem, +5% Crit & Stagger & Burn	 
+Piekron	3		Spear BA-BOOM	Complete CS2	20	?	True	Successful charged attack/defense with weapon	Attack speed vs Iron Door (YariCS=1000 times)	(Affected by Yarida CS. +20 per spear thrown)	Damage x1.5, +Lightning elem, +10% Crit & Stagger, +5% Burn	 
+Piekron	4		Spear BA-BA-BOOM	Complete CS3	10	?	True	Successful charged attack/defense with weapon	Attack speed vs Iron Door (YariCS=2000 times)	(Affected by Yarida CS. +10 per spear thrown)	Damage x2, +Lightning elem, +15% Crit & Stagger, +5% Burn	 
+Wooyari	1		Two Strike	Must be Lvl 9	480	13 minutes, 52 seconds	True	Successful fever attack/charged non-fever attack	Iron Door (208 times)		Doesn’t have extra dmg per hit	 
+Wooyari	2		Three Strike	Complete CS1	240	27 minutes, 44 seconds	True	Successful fever attack/charged non-fever attack	Iron Door (416 times)		Doesn’t have extra dmg per hit	 
+Wooyari	3		Four Strike	Complete CS2	120	55 minutes, 36 seconds	True	Successful fever attack/charged non-fever attack	Iron Door (834 times)		Doesn’t have extra dmg per hit	 
+Wooyari	4		Five Strike	Complete CS3	60	111 minutes, 4 seconds	True	Successful fever attack/charged non-fever attack	Iron Door (1,666 times)		Doesn’t have extra dmg per hit	 
+Wooyari	5		Six Strike	Complete CS4	30	222 minutes, 12 seconds	True	Successful fever attack/charged non-fever attack	Iron Door (3,333 times)		Doesn’t have extra dmg per hit	 
+Kibadda	1		Assault Hits 1	Must be Lvl 5	240	27 minutes, 44 seconds	True	Charged non-fever attack/defense, any fever attack	Anywhere (416 times)		Stampede amount x1.5	 
+Kibadda	2		Assault Hits 2	Complete CS1	120	55 minutes, 36 seconds	True	Charged non-fever attack/defense, any fever attack	Anywhere (834 times)		Stampede amount x2	 
+Kibadda	3		Assault Hits 3	Complete CS2	60	111 minutes, 4 seconds	True	Charged non-fever attack/defense, any fever attack	Anywhere (1,666 times)		Stampede amount x2.5	 
+Kibadda	4		Assault Hits 4	Complete CS3	30	222 minutes, 12 seconds	True	Charged non-fever attack/defense, any fever attack	Anywhere (3,333 times)		Stampede amount x3	 
+Pyokorider	1		Giddy Up 1	Must be Lvl 10	300	22 minutes, 12 seconds	True	Perfect march command	Command cancel can cut train time in half	333 march commands	 	 
+Pyokorider	2		Giddy Up 2	Complete CS1	100	66 minutes, 40 seconds	True	Perfect march command	Command cancel can cut train time in half	1000 march commands	 	 
+Pyokorider	3		Giddy Up 3	Complete CS2	50	133 minutes, 20 seconds	True	Perfect march command	Command cancel can cut train time in half	2000 march commands	 	 
+Pyokorider	4		Giddy Up 4	Complete CS3	25	266 minutes, 40 seconds	True	Perfect march command	Command cancel can cut train time in half	4000 march commands	 	 
+Cannassault	1		Backbone 1	Must be Lvl 9	180	?	False	Attack/Defend in Fever against Knockback	Defense Practice	Unreliable Class Skill to train; gain is erratic	 	 
+Cannassault	2		Backbone 2	Complete CS1	90	?	False	Attack/Defend in Fever against Stagger	Defense Practice	Unreliable Class Skill to train; gain is erratic	 	 
+Cannassault	3		Backbone 3	Complete CS2	30	?	False	Attack/Defend in Fever against Freeze	Snoworb Cannons	Unreliable Class Skill to train; gain is erratic	 	 
+Cannassault	4		Backbone 4	Complete CS3	10	?	True	Attack/Defend in Fever against Fire	Stand in Fire, Archfiend of Restraint	Unreliable Class Skill to train; gain is erratic	 	 
+Charibasa	1		Pyokora Spirit	Must be Lvl 14	300	22 minutes, 12 seconds	True	March command	Command cancel can cut train time in half		 	 
+Charibasa	2		Yaripon Spirit	Complete CS1	150	44 minutes, 24 seconds	True	Throwing spears (any attack/defense)	Iron Door	Does not gain more with amount of spears thrown.	 	 
+Charibasa	3		Chariot Attack	Complete CS2	200	?	True	Successfully deal damage with chariot wheel	Burn% and Grass Grower to iron door in DoP		Dmg x1.5	
+Charibasa	4		Kanokyon Spirit	Complete CS3	10	?	True	Fever Attacking/Defending/Partying against status	Burn% and Grass Grower to iron door in DoP	Only applies against trained Backbone statuses.	For grinding: AFK grinding works, Taken damage must be greater than zero.	 
+Taterazay	1		Energy Field 10%	Must be Lvl 1	600	11 minutes, 4 seconds (166 times)	True	Perfect Defence	Command cancel can cut train time in half		 	 
+Taterazay	2		Energy Field 20%	Complete CS1	200	33 minutes, 20 seconds (500 times)	True	Perfect Defence	Command cancel can cut train time in half		 	 
+Taterazay	3		Energy Field 30%	Complete CS2	100	66 minutes, 40 seconds (1000 times)	True	Perfect Defence	Command cancel can cut train time in half		 	 
+Taterazay	4		Energy Field 40%	Complete CS3	50	133 minutes, 20 seconds(2000 times)	True	Perfect Defence	Command cancel can cut train time in half		 	 
+Taterazay	5		Energy Field 50%	Complete CS4	25	266 minutes, 40 seconds(4000 times)	True	Perfect Defence	Command cancel can cut train time in half		 	 
+Destrobo	1		Wood Smasher	Must be Lvl 7	300	About 1 minute	False	Hit wood enemy or obstacle (charge attack works)	Solo in Range of Justice with default arms.	Lever counts as wood.	Against wood 150%	 
+Destrobo	2		Stone Smasher	Complete CS1	100		False	Hit stone enemy or obstacle (charge attack works)	Racing Alley of Restraint with low Strength.		Against stone 150%	 
+Destrobo	3		Metal Smasher	Complete CS2	50		False	Hit metal enemy or obstacle (charge attack works)	Racing Alley of Restraint with low Strength.	Most stone structures also count as metal	Against metal 150%	 
+Destrobo	4		Everything Smasher	Complete CS3	25	About 4 minutes	True	Hit anything at all	Burn% and Grass Grower to iron door in DoP.	Grass is a structure. Burn Immune recommended.	Adds Crush type (And that’s all). Crush ALWAYS ignores shield evasion	 
+Guardira	1		Anti-Stagger	Must be Lvl 10	60		False	Endure Stagger-inducing attack in fever	Defense Practice OR Vs. Sonarchy	Does not count on attacks hitting Heromode shield	 	 
+Guardira	2		Anti-Knockback	Complete CS1	20		False	Endure Knockback-inducing attack in fever	Defense Practice OR Vs. Sonarchy	Does not count on attacks hitting Heromode shield	 	 
+Guardira	3		Anti-Sleep	Complete CS2	15		False	Endure Sleep-inducing attack in fever	Gargoyle Curse OR Vs. Sonarchy	Does not count on attacks hitting Heromode shield	 	 
+Guardira	4		Anti-Poison	Complete CS3	20		False	Endure Poison-inducing attack in fever	Gargoyle Curse OR Vs. Sonarchy	Does not count on attacks hitting Heromode shield	 	 
+Tondenga	1		Set Skills 1	Must be Lvl 5	300	333 times	True	March while using max set skill slots	Command cancel can cut train time in half			
+Tondenga	2		Set Skills 2	Complete CS1	100	1000 times	True	March while using max set skill slots	Command cancel can cut train time in half			
+Tondenga	3		Set Skills 3	Complete CS2	50	2000 times	True	March while using max set skill slots	Command cancel can cut train time in half			
+Tondenga	4		Set Skills 4	Complete CS3	25	4000 times	True	March while using max set skill slots	Command cancel can cut train time in half			
+Myamsar	1		Poison Hide	Must be Lvl 8	300		False	Enemy melee attack in fever	Party against any melee unit with low damage		Needs Fever to GRIND CS. Poison rate and resistance matters. Only melee, doesn't work against DH.	 
+Myamsar	2		Doppelganger	Complete CS1	100		True	Endure status attack during attack, defense or HM	Burn% and Grass Grower to iron door in DoP		Needs Fever to GRIND CS	 
+Myamsar	3		Poison Bomb	Complete CS2	1000		False	Own death	Idle against any unit w/ fire w/ P. Sheep & Dragon	Not affected by Peerless Monkey.	+50% Poison rate	 
+Myamsar	4		Natural Enemy	Complete CS3	40		False	Hit shield-bearing enemy (no damage needed)	Depths of Despair, Peerless Sheep, default equip.		No it doesn’t work to slog :(	 
+Bowmunk	1		Tiny Base	Must be Lvl 12	480	27 minutes, 44 seconds	True	Placing Charge Defense Boulder	Can be done anywhere		1.3x structure max HP boost, VS ONLY (Grinding works anywhere) Each CS boost different structure	 
+Bowmunk	2		Mid Base	Complete CS1	160	83 minutes, 20 seconds	True	Placing Charge Defense Boulder	Can be done anywhere	625 charge defense commands to fully train	1.3x structure max HP boost, VS ONLY (Grinding works anywhere) Munk Boulder uses this	 
+Bowmunk	3		Big Base	Complete CS2	80	166 minutes, 40 seconds	True	Placing Charge Defense Boulder	Can be done anywhere	1250 charge defense commands to fully train	1.3x structure max HP boost, VS ONLY (Grinding works anywhere)	 
+Bowmunk	4		Super Fortress	Complete CS3	40	333 minutes, 20 seconds	True	Placing Charge Defense Boulder	Can be done anywhere	2500 charge defense commands to fully train	1% HP Recover, VS ONLY (Grinding works anywhere) Curiously, also called before dep lol	
+Grenburr	1		Zapper 1	Must be Lvl 14	240	27 minutes, 44 seconds	True	Attacking (or heromode)	Iron Door	416 attack commands to fully train	ADDs effect that: no crit/burn/sleep/freeze/poison, strike type.	
+Grenburr	2		Zapper 2	Complete CS1	80	83 minutes, 20 seconds	True	Attacking (or heromode)	Iron Door	1,250 attack commands to fully train	ADDs effect that: 1.2x dmg, +5% stagger&kb, no crit/burn/sleep/freeze/poison, strike type.	
+Grenburr	3		Zapper 3	Complete CS2	40	166 minutes, 40 seconds	True	Attacking (or heromode)	Iron Door	2,500 attack commands to fully train	ADDs effect that: 1.5x dmg, +10% stagger&kb, no crit/burn/sleep/freeze/poison, strike type.	
+Grenburr	4		Zapper 4	Complete CS3	20	333 minutes, 20 seconds	True	Attacking (or heromode)	Iron Door	5,000 attack commands to fully train	ADDs effect that: 2x dmg, +15% stagger&kb, no crit/burn/sleep/freeze/poison, strike type.	
+Grenburr	5		Zapper 5	Complete CS4	10	666 minutes, 40 seconds	True	Attacking (or heromode)	Iron Door	10,000 attack commands to fully train	ADDs effect that: 3x dmg, +20% stagger&kb, no crit/burn/sleep/freeze/poison, strike type.	 
+Yumiyacha	1		Quickshot 2	Must Be Lv 1	240		True	Firing bow	Heromode, Defending	Trains from defense song		 
+Yumiyacha	2		Quickshot 3	Complete CS1	160		True	Firing bow	Heromode, Defending	Trains from defense song		 
+Yumiyacha	3		Quickshot 4	Complete CS2	80		True	Firing bow	Heromode, Defending	Trains from defense song		 
+Yumiyacha	4		Quickshot 5	Complete CS3	40		True	Firing bow	Heromode, Defending	Trains from defense song		 
+Yumiyacha	5		Quickshot 6	Complete CS4	20		True	Firing bow	Heromode, Defending	Trains from defense song	 	 
+Alosson	1		Attack Speed 1	Must Be Lv 7	300		True	Charge attack or Fever attack	Command cancel can cut train time in half	Trains by Commands.	Attk Speed x0.5	 
+Alosson	2		Attack Speed 2	Complete CS1	100		True	Charge attack or Fever attack	Command cancel can cut train time in half	Trains by Commands.	Attk Speed x0.3	 
+Alosson	3		Attack Speed 3	Complete CS2	50		True	Charge attack or Fever attack	Command cancel can cut train time in half	Trains by Commands.	Attk Speed x0.18	 
+Alosson	4		Attack Speed 4	Complete CS3	25		True	Charge attack or Fever attack	Command cancel can cut train time in half	Trains by Commands.	Attk Speed x0.1	 
+Wondabarappa	1		Heave Ho 1	Must Be Lv 4	120	55 minutes, 36 seconds	True	Staying in Fever while alive (every 4 seconds)	Can be done anywhere	834 fever commands	Stacks, Stacks with P Rabbit too	 
+Wondabarappa	2		Heave Ho 2	Complete CS1	40	166 minutes, 40 seconds	True	Staying in Fever while alive (every 4 seconds)	Can be done anywhere	2,500 fever commands	Stacks, Details on Buff_Amount tab	 
+Wondabarappa	3		Heave Ho 3	Complete CS2	20	333 minutes, 20 seconds	True	Staying in Fever while alive (every 4 seconds)	Can be done anywhere	5,000 fever commands	Stacks, Details on Buff_Amount tab	 
+Wondabarappa	4		Heave Ho 4	Complete CS3	10	666 minutes, 40 seconds	True	Staying in Fever while alive (every 4 seconds)	Can be done anywhere	10,000 fever commands	March Speed x1.2, Stacks, NOT Affected by team aid	 
+Jamsch	1		Catnap	Must Be Lv 11	20		False	Hitting enemy with sleep%, or spores connect	Solo on Bonedeth on the Cliff	5 spores are fired in heromode. Charge attack won't work.	 	 
+Jamsch	2		Flame On	Complete CS1	20		False	Jamsch hits with fire during charge attack/defense	Burn% and Grass Grower to iron door in DoP.	Works most effectively on grass. No contest.	 	 
+Jamsch	3		Poison Panic	Complete CS2	40	166 minutes,40 seconds(2500 times)	True	Attack command	Command cancel attack	Trains by Commands.	 	 
+Jamsch	4		Doom Shroom	Complete CS3	200		False	Killing enemies	Summon + Low HP Bosses (500 procs)	Procs on bosses with 1 HP during summons until the summon ends.	Same as Toadstool but 100%	 
+Pingrek	1		Ice Wall	Must Be Lv 5	480	27 minutes, 44 seconds	True	Successfully casting ice wall	Can be done anywhere	208 charge attack commands to fully train		 
+Pingrek	2		Freeze Trap	Complete CS1	160		True	Ice wall breaking	Can be done anywhere	Counts when old ice walls are destroyed for new ones.		 
+Pingrek	3		Ice Buttress	Complete CS2	80		True	Successfully casting ice wall or entering heromode	Can be done anywhere	Heromode doesnt grant EXP any faster than ice walls.		 
+Pingrek	4		Health Recovery	Complete CS3	5	KAN ONLY: 1333 minutes, 20 seconds	True	Healing yourself or allies under 100% HP	Minimal strength on Pingrek w/ Peerless Shroom.	Training time considers 1 healing target only. Also trains with Yamagami.		 
+Pingrek	5		Frost Guard	Complete CS4	500		False	Freezing melee attacker by defending	Defend against any melee unit with low damage	Frost guard nulls most enemies' freeze immunity	Afk grinding works. This CHECKS Doppelganger/Backbone/Freeze immunity (Doesn’t check pdeer)	
+Cannogabang	1		Cannon Skillz	Must Be Lv 13	240		True	Shoot Cannon	Attack Speed vs Iron Door (417 times)	1.60 Attack Speed to fire twice.	+20% boost	
+Cannogabang	2		Scattershot Skillz	Complete CS1	120		True	Shoot Howitzer	Attack Speed vs Iron Door	1.60 Attack Speed to fire twice.	+20% boost	
+Cannogabang	3		Laser Skillz	Complete CS2	40		True	Shoot Laser	Attack Speed vs Iron Door	Only fires once.	+20% boost	
+Cannogabang	4		Artillery Skillz	Complete CS3	20		True	Shoot any firearm	Anywhere		+50% boost	
+Cannogabang	5		Incendiary Skillz	Complete CS4	10		True	Fire landing on the ground	Howitzer, anywhere			
+Oohoroc	1	Fireball	Singe 1	Must be Lvl 1	1200	11 minutes, 4 seconds	True	Successful Charge Attack using Fireball Staff	Iron Door (83 times)	Also works with Phoenix Ultimate Staff (Attack)	None	
+Oohoroc	2	Fireball	Singe 2	Complete SNG1	400	16 minutes, 40 seconds	True	Successful Charge Attack using Fireball Staff	Iron Door (250 times)	Also works with Phoenix Ultimate Staff (Attack)	Dmg x1.5, Burn +30%	
+Oohoroc	3	Fireball	Singe 3	Complete SNG2	200	66 minutes, 40 seconds	True	Successful Charge Attack using Fireball Staff	Iron Door (500 times)	Also works with Phoenix Ultimate Staff (Attack)	Dmg x2.5, Burn +60%	
+Oohoroc	4	Fireball	Singe 4	Complete SNG3	80	166 minutes, 40 seconds	True	Successful Charge Attack using Fireball Staff	Iron Door (1,250 times)	Also works with Phoenix Ultimate Staff (Attack)	Dmg x4, Burn +90%	
+Oohoroc	5	Fireball	Singe 5	Complete SNG4	30	444 minutes	True	Successful Charge Attack using Fireball Staff	Iron Door (3,330 times)	Also works with Phoenix Ultimate Staff (Attack)	Dmg x6, Burn +120%, Welcome bonus same as Damage+	
+Oohoroc	1	Firewall	Volcano 1	Must be Lvl 1	1200	11 minutes, 4 seconds	True	Successful Charge Attack using Firewall Staff	Iron Door (83 times)	Also works with Phoenix Ultimate Staff (Charge Attack)	Nullifies Crit/KB/Stagger rate	
+Oohoroc	2	Firewall	Volcano 2	Complete VOL1	400	16 minutes, 40 seconds	True	Successful Charge Attack using Firewall Staff	Iron Door (250 times)	Also works with Phoenix Ultimate Staff (Charge Attack)	Dmg x1.2, Burn +5%, Nullifies Crit/KB/Stagger rate	
+Oohoroc	3	Firewall	Volcano 3	Complete VOL2	200	66 minutes, 40 seconds	True	Successful Charge Attack using Firewall Staff	Iron Door (500 times)	Also works with Phoenix Ultimate Staff (Charge Attack)	Dmg x1.5, Burn +10%, Nullifies Crit/KB/Stagger rate	
+Oohoroc	4	Firewall	Volcano 4	Complete VOL3	80	166 minutes, 40 seconds	True	Successful Charge Attack using Firewall Staff	Iron Door (1,250 times)	Also works with Phoenix Ultimate Staff (Charge Attack)	Dmg x2, Burn +15%, Nullifies Crit/KB/Stagger rate	
+Oohoroc	5	Firewall	Volcano 5	Complete VOL4	30	444 minutes	True	Successful Charge Attack using Firewall Staff	Iron Door (3,330 times)	Also works with Phoenix Ultimate Staff (Charge Attack)	Dmg x2.5, Burn +20%, Nullifies Crit/KB/Stagger rate, Welcome bonus same as Damage+	
+Oohoroc	1	Lightning	Flash Crack Boom 1	Must be Lvl 1	1200	12 minutes, 4 seconds	True	Successful Charge Attack using Lightning Staff	Iron Door (83 times)		Nullifies Sleep/Poison rate	
+Oohoroc	2	Lightning	Flash Crack Boom 2	Complete FCB1	400	16 minutes, 40 seconds	True	Successful Charge Attack using Lightning Staff	Iron Door (250 times)		Dmg x1.5, Crit & Stagger +10%, Nullifies Sleep/Poison rate	
+Oohoroc	3	Lightning	Flash Crack Boom 3	Complete FCB2	200	66 minutes, 40 seconds	True	Successful Charge Attack using Lightning Staff	Iron Door (500 times)		Dmg x2.5, Crit & Stagger +20%, Nullifies Sleep/Poison rate	
+Oohoroc	4	Lightning	Flash Crack Boom 4	Complete FCB3	80	166 minutes, 40 seconds	True	Successful Charge Attack using Lightning Staff	Iron Door (1,250 times)		Dmg x4, Crit & Stagger +30%, Nullifies Sleep/Poison rate	
+Oohoroc	5	Lightning	Flash Crack Boom 5	Complete FCB4	30	444 minutes	True	Successful Charge Attack using Lightning Staff	Iron Door (3,330 times)		Dmg x6, Crit & Stagger +40%, Nullifies Sleep/Poison rate, Welcome bonus same as Damage+	
+Oohoroc	1	Thunderific	Thunderific	Complete FCB2	100	133 minutes, 20 seconds	True	Casting Thunderific using Thunderstorm Staff	Iron Door (1,000 times)	This sorcery is terrible. Multicastable. Train time considers 1 cast.	Welcome bonus same as Damage+	
+Oohoroc	1	Darkfire	Darkfire	Complete VOL3	100	133 minutes, 20 seconds	True	Casting Darkfire using Flamesea Staff	Iron Door (1,000 times)	This sorcery is terrible. Multicastable. Train time considers 1 cast.	Welcome bonus same as Damage+	
+Oohoroc	1	Venomist	Venomist	Complete SNG3	100	133 minutes, 20 seconds	True	Casting Venomist using Darkvenom Staff	Anywhere (1,000 times)	Spell is cast many times in summons. Train time considers 1 cast.	Welcome bonus same as Damage+	
+Oohoroc	1	NovaNova	Nova Nova	Complete FCB3	100	133 minutes, 20 seconds	True	Casting Nova Nova using Holymist Staff	Anywhere (1,000 times)	Spell is cast many times in summons. Train time considers 1 cast.	Welcome bonus same as Damage+	
+Ravenous	1		Kamaitachi 1	Must be Lvl 31	400		True	Performing Successful Charge Attack	Can be done anywhere		 	 
+Ravenous	2		Fire Tornado	Complete CS1	400		True	Performing Successful Charge Attack	Can be done anywhere	Must be trained a minimum of 0.001% before progress can be made	+35% Burn rate, Sleep/Freeze/Poison rate remains as zero, only Fire type (Original tornado: only Slash, removes burn, sleep, freeze, poison)	
+Ravenous	3		Kamaitachi 2	Complete CS2	30		True	Performing Successful Charge Attack	Can be done anywhere	All CS gain their benefits immediately, so there is no need to train this fully	Different effect, no dmg change	 
+Sonarchy	1		Bloodsuck 1	Must be Lvl 31	100		True	Any Successful Attack while missing Stamina	Growem Green and Yamagami	Bloodsuck will progress on self-inflicted damage or friendly fire (best seen on Yamagami)	 	 
+Sonarchy	2		Bloodsuck 2	Complete CS1	20		True	Any Successful Attack while missing Stamina	Growem Green and Yamagami	Bloodsuck will progress on self-inflicted damage or friendly fire (best seen on Yamagami)	Absorbs 20% (wrong description)	 
+Sonarchy	3		Bloodsuck 3	Complete CS2	4		True	Any Successful Attack while missing Stamina	Growem Green and Yamagami	Bloodsuck will progress on self-inflicted damage or friendly fire (best seen on Yamagami) There is no need to train this fully.	Absorbs 30% (wrong description)	 
+Ragewolf	1		Regenerate 1	Must be Lvl 31	25	4 hours, 26 minutes, 24 seconds	True	Regenerating (4secs)	Can be done anywhere		1% HP Gain	 
+Ragewolf	2		Regenerate 2	Complete CS1	5	22 hours, 12 minutes, 20 seconds	True	Regenerating (4secs)	Can be done anywhere		3% HP Gain	 
+Ragewolf	3		Regenerate 3	Complete CS2	1	111 hours, 6 minutes, 40 seconds	True	Regenerating (4secs)	Can be done anywhere	All CS gain their benefits immediately, so there is no need to train this fully	5% HP Gain	 
+Naughtyfins	1		Twin Spear	Must be Lvl 31	200		True	Any Successful Attack	Attack speed vs Iron Door	Naughtyfins can throw multiple times in the air	 	 
+Naughtyfins	2		Quadruple Spear	Complete CS1	50		True	Any Successful Attack	Attack speed vs Iron Door	Naughtyfins can throw multiple times in the air	 	 
+Naughtyfins	3		Six Spear	Complete CS2	10		True	Any Successful Attack	Attack speed vs Iron Door	Naughtyfins can throw multiple times in the air. There is no need to train this fully.	 	 
+Slogturtle	1		Duck and Cover	Must be Lvl 31	20		True	Taking damage from enemies (needs fix)	Defense Practice	Unable to gain EXP due to bug. If bug is fixed, all damage types will give you exp.	For grinding: AFK grinding works, Taken damage must be greater than zero.	 
+Slogturtle	2		Deep Sleep	Complete CS1	1000		False	Dying	Idle in Depths of Despair		230% Sleep rate	 
+Slogturtle	3		Return to Sender	Complete CS2	2		False	Being hit by slash/strike melee attacks	Idle in Bonedeth quests	All CS gain their benefits immediately, so there is no need to train this fully	 	 
+Covet-hiss	1		Instacharge	Must be Lvl 31	200		True	Attack Command (needs fix)	Command cancel	Unable to gain EXP due to bug. If bug is fixed, any attack works, no need to fire gun.	Attk Speed x0.8	 
+Covet-hiss	2		Body Piercing	Complete CS1	50		True	Attack Command (needs fix)	Command cancel	Unable to gain EXP due to bug. If bug is fixed, any attack works, no need to fire gun.	 	 
+Covet-hiss	3		Tainted	Complete CS2	25		False	Poisoning an enemy		All CS gain their benefits immediately, so there is no need to train this fully	 	 
+Buzzcrave	1		Rush 'Em	Must be Lvl 31	200		True	Charged non-fever attack or defense, or any fever attack (no heromode)	Can be done anywhere	Don't need to hit any enemy for this skill. Needs to do the charging animation for EXP.	Same as Assault Hit 3 (2.5x stampede)	 
+Buzzcrave	2		Grubby	Complete CS1	100		False	Kill any non-boss, non-structure enemy	Bonedeth Quests	Works on Karmen, Zigotons, Bonedeth, UH, DH, allies and even yourself (best seen through gargoyle curse).	Does same thing as HM but with only 4 flies	 
+Buzzcrave	3		Shish-kabob	Complete CS2	20		False	Do damage to any non-boss, non-structure enemy not holding a shield	Vs. OR Bonedeth Quests	Former note. Works on yourself and allies, as long as you or they aren't holding a shield. There is no need to train this fully.	 	

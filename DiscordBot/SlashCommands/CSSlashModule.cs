@@ -13,11 +13,11 @@ namespace DiscordBot.SlashCommands
             _info = new TsvParser().ParseCS();
         }
         [SlashCommand("cs", "command_description")]
-        public async Task ExecuteCommand([Autocomplete(typeof(ClassAutoComplete))]string className, int level, string group = "")
+        public async Task ExecuteCommand([Autocomplete(typeof(ClassAutoComplete))]string className, int level, CsOohoroc group = CsOohoroc.None)
         {
             bool isOohoroc = className == "Oohoroc";
-            if (level>5 || level<0 || !ClassAutoComplete.IsValidClassName(className)
-                || !_info.TryGetValue(className+level+(isOohoroc?group:""), out CsGrindInfo info))
+            if (level>5 || level<0 || !ClassAutoComplete.IsValidClassName(className, out string finalClassName)
+                || !_info.TryGetValue(finalClassName+level+(isOohoroc?group:""), out CsGrindInfo info))
             {
                 await RespondAsync("Incorrect parameter. Try again");
                 return;
@@ -32,6 +32,7 @@ namespace DiscordBot.SlashCommands
             embed.AddField("Trains from", $"{info.TrainingMethod} ({info.TrainsFrom})");
             embed.AddField("Train time", $"{info.TrainingTime} ({info.Exp} / 100000 exp per performing)");
             if (!string.IsNullOrEmpty(info.Note)) embed.AddField("Note", info.Note);
+            if (!string.IsNullOrEmpty(info.Detail)) embed.AddField("Detail", info.Detail);
 
             await RespondAsync(embed: embed.Build());
         }

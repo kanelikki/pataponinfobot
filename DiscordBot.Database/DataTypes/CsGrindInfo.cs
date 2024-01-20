@@ -26,6 +26,8 @@ namespace DiscordBot.Database.DataTypes
         public bool Dupe { get; set; }
         [Optional]
         public string Note { get; set; }
+        [Optional]
+        public string Detail { get; set; } //from Mielikki's note
 
         public string GetKey()
         {
