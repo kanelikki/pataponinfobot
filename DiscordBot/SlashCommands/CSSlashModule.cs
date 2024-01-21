@@ -2,22 +2,31 @@
 using Discord.Interactions;
 using DiscordBot.Database;
 using DiscordBot.Database.DataTypes;
+using DiscordBot.SlashCommands.AutoCompleters;
 
 namespace DiscordBot.SlashCommands
 {
     public class CSSlashModule : InteractionModuleBase<SocketInteractionContext>
     {
         private readonly Dictionary<string, CsGrindInfo> _info;
-        public CSSlashModule():base()
+        public CSSlashModule(IDB db):base()
         {
-            _info = new TsvParser().ParseCS();
+            if (db.TryGetTable<CsGrindInfo>("CS", out var info))
+            {
+                _info = info;
+            }
         }
         [SlashCommand("cs", "command_description")]
-        public async Task ExecuteCommand([Autocomplete(typeof(ClassAutoComplete))]string className, int level, CsOohoroc group = CsOohoroc.None)
+        public async Task GetCsInfo([Autocomplete(typeof(ClassDataAutoCompleteHandler))]string className, int level, CsOohoroc group = CsOohoroc.None)
         {
-            bool isOohoroc = className == "Oohoroc";
-            if (level>5 || level<0 || !ClassAutoComplete.IsValidClassName(className, out string finalClassName)
-                || !_info.TryGetValue(finalClassName+level+(isOohoroc?group:""), out CsGrindInfo info))
+            if (_info == null)
+            {
+                await RespondAsync("This command is not functional, because the database is not loaded.");
+                return;
+            }
+            bool isOohoroc = className.ToLower() == "oohoroc";
+            if (level>5 || level<0 || !_info.TryGetValue(className+level+(isOohoroc?group:""), out CsGrindInfo info)
+                || info ==null)
             {
                 await RespondAsync("Incorrect parameter. Try again");
                 return;
@@ -31,8 +40,8 @@ namespace DiscordBot.SlashCommands
             embed.AddField("Prerequest", info.Prerequest);
             embed.AddField("Trains from", $"{info.TrainingMethod} ({info.TrainsFrom})");
             embed.AddField("Train time", $"{info.TrainingTime} ({info.Exp} / 100000 exp per performing)");
-            if (!string.IsNullOrEmpty(info.Note)) embed.AddField("Note", info.Note);
-            if (!string.IsNullOrEmpty(info.Detail)) embed.AddField("Detail", info.Detail);
+            if (!string.IsNullOrWhiteSpace(info.Note)) embed.AddField("Note", info.Note);
+            if (!string.IsNullOrWhiteSpace(info.Detail)) embed.AddField("Detail", info.Detail);
 
             await RespondAsync(embed: embed.Build());
         }

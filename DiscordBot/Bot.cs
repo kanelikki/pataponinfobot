@@ -1,6 +1,7 @@
 ﻿using Discord;
 using Discord.Interactions;
 using Discord.WebSocket;
+using DiscordBot.Database;
 using Microsoft.Extensions.DependencyInjection;
 using System.Reflection;
 
@@ -20,6 +21,7 @@ namespace DiscordBot
                 GatewayIntents = GatewayIntents.None
             };
             var collection = new ServiceCollection();
+            collection.AddSingleton<IDB, DB>();
             _client = new DiscordSocketClient(config);
             _serviceProvider = collection.BuildServiceProvider();
         }
@@ -41,7 +43,6 @@ namespace DiscordBot
             _interactionService = new InteractionService(_client.Rest);
             await _interactionService.AddModulesAsync(Assembly.GetExecutingAssembly(), _serviceProvider);
             await _interactionService.RegisterCommandsToGuildAsync(1055494833021661296);
-            //await _interactionService.RegisterCommandsGloballyAsync();
 
             _client.InteractionCreated += async (x) =>
             {

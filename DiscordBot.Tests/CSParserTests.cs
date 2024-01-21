@@ -8,7 +8,7 @@ namespace DiscordBot.Tests
         private readonly Dictionary<string, CsGrindInfo> _grindInfo;
         public CSParserTests()
         {
-            _grindInfo = new TsvParser().ParseCS();
+            _grindInfo = new TsvParser().Parse<CsGrindInfo>("data/CS.tsv", StringComparer.OrdinalIgnoreCase);
         }
         [Fact]
         public void ParseString_WithoutGroup()
