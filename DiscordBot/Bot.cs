@@ -13,7 +13,7 @@ namespace DiscordBot
         private readonly ILogger _logger;
         private readonly IServiceProvider _serviceProvider;
         private InteractionService _interactionService;
-        public Bot(ILogger logger)
+        public Bot(ILogger logger, IDbLogger dbLogger = null)
         {
             _logger = logger;
             var config = new DiscordSocketConfig
@@ -21,11 +21,11 @@ namespace DiscordBot
                 GatewayIntents = GatewayIntents.None
             };
             var collection = new ServiceCollection();
-            collection.AddSingleton<IDB, DB>();
+            if (dbLogger != null) collection.AddSingleton<IDB, DB>(_ => new DB(dbLogger));
+            else collection.AddSingleton<IDB, DB>();
             _client = new DiscordSocketClient(config);
             _serviceProvider = collection.BuildServiceProvider();
         }
-
         public async Task StartAsync()
         {
 

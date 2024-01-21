@@ -1,0 +1,93 @@
+"Name"	"Enemy Type"	"Immunities"	"SlashTaken"	"StrikeTaken"	"StabTaken"	"CrushTaken"	"FireTaken"	"IceTaken"	"LightningTaken"	"PoisonTaken"	"SoundTaken"	"LightTaken"	"DarkTaken"
+"Ravenous"	"Demon"	"None"	0.5	0.5	0.5	1	1	1	1	1	1	1.2	1
+"Sonarchy"	"Demon"	"Poison"	1	1	1	1	1	1	1	1	0.5	1.2	1
+"Ragewolf"	"Demon"	"Burn"	1	1	1	1	0.5	1.5	1	1	1	1.2	1
+"Naughtyfins"	"Demon"	"Freeze"	1	1	1	1	1.5	0.5	1	1	1	1.2	1
+"Slogturtle"	"Demon"	"None"	1	1	1	1	0.8	0.8	0.8	0.8	0.8	0.8	0.8
+"Covet-Hiss"	"Demon"	"None"	1	1	1	1	1	1	1	1	1	1	1
+"Buzzcrave"	"Demon"	"None"	0.5	0.5	0.5	1	1	1	1	1	1	1	1
+"Mochichi"	"Typeless"	"Kb, Stagger, Burn, Sleep, Freeze, Poison, Tumble"	1	1	1	1	1	1	1	1	1	1	1
+"Momoti"	"Typeless"	"Kb, Stagger, Burn, Sleep, Freeze, Poison, Tumble"	1	1	1	1	1	1	1	1	1	1	1
+"Motsitsi"	"Typeless"	"Kb, Stagger, Burn, Sleep, Freeze, Poison, Tumble"	1	1	1	1	0	1	0	1	1	1	1
+"Kacheek"	"Typeless"	"Kb, Stagger, Burn, Sleep, Freeze"	1	1	1	1	1	1	1	1	1	1	1
+"Kacheek Desert"	"Typeless"	"Kb, Stagger, Burn, Sleep, Freeze"	1	1	1	1	1	1	1	1	1	1	1
+"Kacheek Swamp"	"Typeless"	"Kb, Stagger, Burn, Sleep, Freeze"	1	1	1	1	1	1	1	1	1	1	1
+"Kacheek Mountain"	"Typeless"	"Kb, Stagger, Burn, Sleep, Freeze"	1	1	1	1	1	1	1	1	1	1	1
+"Kacheek Snow"	"Typeless"	"Kb, Stagger, Burn, Sleep, Freeze"	1	1	1	1	1	1	1	1	1	1	1
+"Gancheek"	"Typeless"	"Kb, Stagger, Burn, Sleep, Freeze"	1	1	1	1	1	1	1	1	1	1	1
+"Poocheek"	"Typeless"	"Kb, Stagger, Burn, Sleep, Freeze"	1	1	1	1	1	1	1	1	1	1	1
+"Parcheek"	"Typeless"	"Kb, Stagger, Burn, Sleep, Freeze"	1	1	1	1	1	1	1	1	1	1	1
+"Picheek"	"Typeless"	"Kb, Stagger, Burn, Sleep, Freeze"	1	1	1	1	1	1	1	1	1	1	1
+"Babatto"	"Typeless"	"Kb, Stagger, Burn, Sleep, Freeze"	1	1	1	1	1	1	1	1	1	1	1
+"Zubatto"	"Typeless"	"Kb, Stagger, Burn, Sleep, Freeze"	1	1	1	1	1	1	1	1	1	1	1
+"Dobatto"	"Typeless"	"Kb, Stagger, Burn, Sleep, Freeze"	1	1	1	1	1	1	1	1	1	1	1
+"Rappata"	"Typeless"	"Kb, Stagger, Burn, Sleep, Freeze"	1	1	1	1	1	1	1	1	1	1	1
+"Pekkora"	"Typeless"	"Kb, Stagger, Burn, Sleep, Freeze"	1	1	1	1	1	1	1	1	1	1	1
+"Pekkorako"	"Typeless"	"Kb, Stagger, Burn, Sleep, Freeze"	1	1	1	1	1	1	1	1	1	1	1
+"Uji"	"Typeless"	"Kb, Stagger, Burn, Sleep, Freeze, Tumble"	1	1	1	1	1	1	1	1	1	1	1
+"Dodonga"	"Dragon"	"None"	0.8	0.8	0.8	1	0.2	0.2	0.2	0.2	0.2	0.2	0.2
+"Majidonga"	"Dragon"	"None"	0.8	0.8	0.8	1	0.6	1.5	1	0.7	1	1	1
+"Kacchindonga"	"Dragon"	"None"	0.8	0.8	0.8	1	1.5	0.5	1	0.7	1	1	1
+"Cursed Dodonga"	"Dragon"	"None"	0.8	0.8	0.8	1	0.8	1.2	1	1	1	1	1
+"Zaknel"	"Shell"	"None"	0.8	0.8	0.8	1	1.5	1.5	1.5	0.7	1	1	1
+"Dokaknel"	"Shell"	"None"	0.8	0.8	0.8	1	1.5	1.5	1.5	0.7	1	1	1
+"Gaeen"	"Metal"	"None"	0.8	1.5	0.5	1	0.8	1	1.5	0.2	1	1	1
+"Dogaeen"	"Stone"	"None"	0.8	1.5	0.5	1	0.8	1	1.5	0.2	1	1	1
+"Ciokina"	"Shell"	"None"	0.8	0.8	0.8	1	1	1	1	0.7	1	1	1
+"Cioking"	"Shell"	"None"	0.8	0.8	0.8	1	1	1	1	0.7	1	1	1
+"Shookle"	"Wood"	"None"	0.5	0.5	0.5	0.5	2	1	1	0.5	1	1	1
+"Shooshookle"	"Wood"	"None"	0.5	0.5	0.5	0.5	2	1	1	0.5	1	1	1
+"Goruru"	"Demon"	"None"	0.8	0.8	0.8	1	0.8	1	0.6	0.5	1	2	0.5
+"Garuru"	"Demon"	"None"	0.8	0.8	0.8	1	0.8	1	0.6	0.5	1	2	0.5
+"Mochichichi"	"Typeless"	"None"	0.8	0.8	0.8	1	0.8	1	1	0.7	1	1	1
+"Fenicchi"	"Typeless"	"None"	0.8	0.8	0.8	1	0.5	1.5	1	0.7	1	1	1
+"Manboth"	"Typeless"	"None"	0.8	0.8	0.8	1	1	0.8	1	0.7	1	1	1
+"Manboroth"	"Typeless"	"None"	0.8	0.8	0.8	1	1	0.8	1	0.7	1	1	1
+"Centura"	"Shell"	"None"	0.8	0.8	0.8	1	1.5	1	1	0.7	1	1	1
+"Darantula"	"Shell"	"None"	0.8	0.8	0.8	1	1.5	1	1	0.7	1	1	1
+"Kanogias"	"Metal"	"None"	0.8	0.8	0.5	1	0.8	1	1.2	0.2	1	1	1
+"Ganodias"	"Metal"	"None"	0.8	0.8	0.5	1	0.8	1	1.2	0.2	1	1	1
+"Dettankarmen"	"Demon"	"None"	0.8	0.8	0.8	1	1.5	0.8	0.8	0.5	1	2	0.5
+"Zuttankarmen"	"Demon"	"None"	0.8	0.8	0.8	1	1.5	0.8	0.8	0.5	1	2	0.5
+"Gigantus"	"Giant"	"None"	0.8	0.8	0.8	1	1	1	1	0.7	1	1	1
+"Gigante King"	"Giant"	"None"	0.8	0.8	0.8	1	1	1	1	0.7	1	1	1
+"Teranteth"	"Giant"	"None"	0.8	0.8	0.8	1	1	1	1	0.7	1	1	1
+"Pandara"	"Demon"	"None"	0.8	0.8	0.8	1	1	1	1	0.3	1	1.2	0.8
+"Pandara Transform"	"Demon"	"None"	0	0	0	0	0	0	0	0	0	0	0
+"Pandara Chest"	"Demon"	"None"	0.8	0.8	0.8	1	1	1	1	0.3	1	1.2	0.8
+"Pandora"	"Demon"	"None"	0.8	0.8	0.8	1	1	1	1	0.3	1	1.2	0.8
+"Pandora Transform"	"Demon"	"None"	0	0	0	0	0	0	0	0	0	0	0
+"Pandora Chest"	"Demon"	"None"	0.8	0.8	0.8	1	1	1	1	0.3	1	1.2	0.8
+"Dongora"	"Demon"	"None"	0.8	0.8	0.8	1	1	1	1	0.3	1	1.2	0.8
+"Dongora Transform"	"Demon"	"None"	0	0	0	0	0	0	0	0	0	0	0
+"Dongora Chest"	"Demon"	"None"	0.8	0.8	0.8	1	1	1	1	0.3	1	1.2	0.8
+"Baros"	"Dragon"	"None"	0.8	0.8	0.8	1	1	1	1	0.5	1	1	1
+"Baros Head 2"	"Dragon"	"None"	0.8	0.8	0.8	1	1	1	1	0.5	1	1	1
+"Baros  Head 3"	"Dragon"	"None"	0.8	0.8	0.8	1	1	1	1	0.5	1	1	1
+"Garos"	"Dragon"	"None"	0.8	0.8	0.8	1	1	1	1	0.5	1	1	1
+"Garos Head 2"	"Dragon"	"None"	0.8	0.8	0.8	1	1	1	1	0.5	1	1	1
+"Garos Head 3"	"Dragon"	"None"	0.8	0.8	0.8	1	1	1	1	0.5	1	1	1
+"Waros"	"Dragon"	"None"	0.8	0.8	0.8	1	1	1	1	0.5	1	1	1
+"Waros Head 2"	"Dragon"	"None"	0.8	0.8	0.8	1	1	1	1	0.5	1	1	1
+"Waros Head 3"	"Dragon"	"None"	0.8	0.8	0.8	1	1	1	1	0.5	1	1	1
+"Cyclops"	"Giant"	"None"	0.8	0.8	0.8	1	1	1	1	1	1	1	1
+"Mutant Cyclops"	"Giant"	"None"	0.8	0.8	0.8	1	1	1	1	1	1	1	1
+"Dragon"	"Dragon"	"None"	0.5	0.8	0.8	1	0.8	1.5	1	0.7	1	1	1
+"Ice Dragon"	"Dragon"	"None"	0.5	0.8	0.8	1	1.5	0.8	1	0.7	1	1	1
+"Dark Dragon"	"Dragon"	"Knockback"	0.5	0.8	0.8	1	1	1	1	0.5	1	1.5	1
+"Fenrir"	"Demon"	"None"	0.8	0.8	0.8	1	0.8	0.8	0.8	0.5	1	1	0.5
+"Thunder Lion"	"Demon"	"Critical"	0.8	0.8	0.8	1	0.5	0.5	0.2	0.5	0.5	1	0.5
+"Treant"	"Wood"	"None"	0.8	1.2	0.4	1	1.2	1	1	1	1	1	1
+"Deth Treant"	"Demon"	"None"	0.8	1.2	0.4	1	1.2	1	1	1	1	1	1
+"Gargoyle"	"Demon"	"None"	0.8	0.4	0.6	1	1	1	1	0.7	1	1	1
+"Elite Gargoyle"	"Demon"	"None"	0.8	0.4	0.6	1	1	1	1	0.7	1	1	1
+"Reaper"	"Undead"	"Stagger, Sleep, Tumble"	0.8	0.8	0.8	1	1.2	1	1	0.2	1	2	0.5
+"Death"	"Undead"	"Stagger, Sleep, Tumble"	0.8	0.8	0.8	1	1.2	1	1	0.2	1	2	0.5
+"Dragon Puppy"	"Dragon"	"None"	0.6	0.8	0.8	1	0.8	1.5	1	0.7	1	1	1
+"Hyumitto"	"Dragon"	"None"	0.6	0.8	0.8	1	1	1	1	0.2	1	1.5	1
+"Fire Salamander"	"Dragon"	"None"	0.8	0.8	0.8	1	0.5	2	1	1	1	1	1
+"Ice Salamander"	"Dragon"	"None"	0.8	0.8	0.8	1	2	0.5	1	1	1	1	1
+"Balrog"	"Demon"	"None"	0.8	0.5	0.8	1	1	1	1	1	1	1	1
+"Balrag"	"Demon"	"None"	0.8	0.5	0.8	1	1	1	1	1	1	1	1
+"Golem"	"Stone"	"Critical, Knockback, Freeze"	0.9	1.5	0.8	1	1	1	1	0.7	1	1	1
+"Ice Golem"	"Stone"	"Knockback, Freeze"	0.9	1.5	0.8	1	1.5	0.5	1	0.7	1	1	1

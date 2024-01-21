@@ -16,8 +16,10 @@ namespace DiscordBot.SlashCommands
                 _info = info;
             }
         }
-        [SlashCommand("cs", "command_description")]
-        public async Task GetCsInfo([Autocomplete(typeof(ClassDataAutoCompleteHandler))]string className, int level, CsOohoroc group = CsOohoroc.None)
+        [SlashCommand("cs", "see detailed class skill grinding info.")]
+        public async Task GetCsInfo(
+            [Autocomplete(typeof(ClassDataAutoCompleteHandler))]string className,
+            int level, CsOohoroc group = CsOohoroc.None)
         {
             if (_info == null)
             {
@@ -44,11 +46,6 @@ namespace DiscordBot.SlashCommands
             if (!string.IsNullOrWhiteSpace(info.Detail)) embed.AddField("Detail", info.Detail);
 
             await RespondAsync(embed: embed.Build());
-        }
-        [SlashCommand("aaa", "command_description")]
-        public async Task ExecuteCommand()
-        {
-            await RespondAsync("Ok. ");
         }
     }
 }

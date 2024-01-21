@@ -20,9 +20,10 @@ namespace DiscordBot.Database
         /// Starts the database.
         /// </summary>
         /// <remarks>You can use with <see cref="Microsoft.Extensions.DependencyInjection.ServiceCollection.AddSingleton"/>.</remarks>
-        public DB()
+        public DB(IDbLogger? logger = null)
         {
             _tsvParser = new TsvParser();
+            _dbLogger = logger;
             Init();
         }
         /// <summary>
@@ -39,6 +40,7 @@ namespace DiscordBot.Database
         private void Init()
         {
             InitEach<CsGrindInfo>("CS");
+            InitEach<PveEnemyInfo>("PVE");
         }
         /// <summary>
         /// Deserializes data from TSV file.
@@ -57,7 +59,7 @@ namespace DiscordBot.Database
             }
             catch(Exception ex)
             {
-                if (_dbLogger != null) _dbLogger.Log(ex.Message);
+                if (_dbLogger != null) _dbLogger.LogDBMessage(ex.Message);
             }
         }
         /// <summary>
