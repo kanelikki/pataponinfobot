@@ -4,8 +4,6 @@ namespace DiscordBot.Database.DataTypes
 {
     public record CsGrindInfo : IInfo
     {
-        [Ignore]
-        public const string Path = "data/CS.tsv";
         [Name("Class")]
         public string ClassName { get; set; }
         public int Level { get; set; }
