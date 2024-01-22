@@ -1,0 +1,34 @@
+﻿namespace DiscordBot.SlashCommands.Enums
+{
+    public enum PataClass
+    {
+        Yumiyacha,
+        Taterazay,
+        Yarida,
+        Kibadda,
+        Destrobo,
+        Piekron,
+        Wooyari,
+        Pyokorider,
+        Cannassault,
+        Charibasa,
+        Guardira,
+        Tondenga,
+        Myamsar,
+        Bowmunk,
+        Grenburr,
+        Alosson,
+        Wondabarappa,
+        Jamsch,
+        Oohoroc,
+        Pingrek,
+        Cannogabang,
+        Ravenous,
+        Sonarchy,
+        Ragewolf,
+        Naughtyfins,
+        Slogturtle,
+        CovetHiss,
+        Buzzcrave
+    }
+}
