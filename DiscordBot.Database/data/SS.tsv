@@ -1,0 +1,129 @@
+Name	Class	Obtain Level	Called	Detail	
+Spear Attk 1	Yarida	3	Barracks and in mission (one per character)	 	 
+Spear Attk 2	Yarida	7	Barracks and in mission (one per character)	 	 
+Spear Attk 3	Yarida	15	Barracks and in mission (one per character)	 	 
+Spear Attk 4	Yarida	25	Barracks and in mission (one per character)	 	 
+Peerless Spear	Yarida	32	N/A	Hardcoded in each UH XXX Attk function. Doesn’t work for DH skill	 
+Rain Dance	Piekron	6	After every command, Including fever stop	 	 
+Shield +2	Piekron	9	Barracks and in mission (each equipment)	 	 
+Shield +3	Piekron	15	Barracks and in mission (each equipment)	 	 
+Stab Master	Piekron	25	Barracks and in mission (one per character)	 	 
+Peerless Frog	Piekron	32	Fire Dmg (Immunity won't call this)	Doesn’t work with fire immunity	 
+Fish in Pond	Wooyari	10	Dmg Dealing/Taking, Before calculating damage	Status Resist boost +20%, Level+2	
+Big Fish in Pond	Wooyari	15	Dmg Dealing/Taking, Before calculating damage	Status Resist boost +40%, Level+4	
+Pike Attk	Wooyari	25	Barracks and in mission (one per character)	 	 
+Peerless Fish	Wooyari	32	(Reserved for Peerless Fish)	NOT affected by team aid	 
+Lance Attk 1	Kibadda	8	Barracks and in mission (one per character)	 	 
+Lance Attk 2	Kibadda	15	Barracks and in mission (one per character)	 	 
+March Speed +	Kibadda	25	Barracks and in mission (one per character)	Affects to ONLY SELF	 
+Peerless Fang	Kibadda	32	Dmg Dealing/Taking, including Status Effect trigger	 	 
+Attk Movement 1	Pyokorider	9	Barracks and in mission (one per character)	 	 
+Grass Grower	Pyokorider	15	Dmg Dealing	10% Chance to grow grass	 
+Attk Movement 2	Pyokorider	25	Barracks and in mission (one per character)	 	 
+Peerless Rabbit	Pyokorider	32	While loading mission	Unlike myth, IT DOESN’T STACK	 
+Damage +	Grenburr	20	Dmg Dealing/Taking, including Status Effect trigger	 	
+Stagger +	Cannassault	8	Barracks and in mission (one per character)	 	 
+Knockback +	Cannassault	15	Barracks and in mission (one per character)	 	 
+Peerless Deer	Cannassault	32	Dmg Taking	1.2x Damage taken during HM	 
+Team Aid 1	Charibasa	13	N/A	They are hardcoded in EACH skill. There’s NO GLOBAL value for boost amount	 
+Team Aid 2	Charibasa	18	N/A	 	 
+Critical +	Charibasa	25	Barracks and in mission (one per character)	 	 
+Peerless Bird	Charibasa	32	Dmg Dealing/Taking, After critical calculation	 	 
+Shields Boost 1	Taterazay	5	Barracks and in mission (one per character)	 	 
+Shields Boost 2	Taterazay	15	Barracks and in mission (one per character)	 	 
+March Defence	Taterazay	25	Dmg Dealing, After damage calculation	 	 
+Peerless Shield	Taterazay	32	Barracks and in mission (one per character)	 	 
+Stagger Resist	Guardira	8	Barracks and in mission (one per character)	 	 
+Knockback Resist	Guardira	15	Barracks and in mission (one per character)	 	 
+Sleep Resist	Guardira	25	Barracks and in mission (one per character)	 	 
+Peerless Sheep	Guardira	32	Dmg Taking	Tate HM, Wonda CS can prevent 1hko	 
+Club Attack	Tondenga	4	Barracks and in mission (one per character)	 	 
+Extra Blubber	Tondenga	8	Barracks and in mission (one per character)	 	 
+Natural Disaster	Tondenga	15	Dmg Dealing/Taking, including Status Effect trigger	If DH can use this, the chance is always 1%	 
+Strike Master	Tondenga	25	Barracks and in mission (one per character)	 	 
+Peerless Pig	Tondenga	32	Dmg Taking	Doesn’t work against DH, EXCEPT Story Ragewolf	 
+Cornered Rat	Myamsar	9	Dmg Dealing, After calculating damage	 	 
+Poison Package	Myamsar	15	Barracks and in mission (one per character)	 	 
+Shield Breaker	Myamsar	25	Barracks and in mission (one per character)	 	 
+Peerless Cat	Myamsar	32	Dmg Dealing, Crit landing, Before crit dmg calculation	IGNORES Tate HM and Wonda CS	 
+Arm Attk 1	Destrobo	6	Barracks and in mission (one per character)	 	 
+Arm Attk 2	Destrobo	9	Barracks and in mission (one per character)	 	 
+Arm Attk 3	Destrobo	15	Barracks and in mission (one per character)	 	 
+Demolitionist	Destrobo	25	Barracks and in mission (one per character)	 	 
+Peerless Robo	Destrobo	32	Dmg Dealing, Before calculating damage	IGNORES Tate HM and Wonda CS, but DOES NOT WORK with Golem set anyway	 
+Stamina Boost 1	Bowmunk	11	Barracks and in mission (one per character)	 	 
+Stamina Boost 2	Bowmunk	15	Barracks and in mission (one per character)	 	 
+Fertilizer	Bowmunk	20	Upon Dying (heal)	 	 
+Self-preservation	Bowmunk	25	???	 	 
+Peerless Tree	Bowmunk	32	After every drum hit	 	 
+Greatsword Attk	Grenburr	13	Barracks and in mission (one per character)	 	 
+Battle Axe Attk	Cannassault	25	Barracks and in mission (one per character)	 	
+Greatblade Attk	Grenburr	16	Barracks and in mission (one per character)	 	 
+Slash Master	Grenburr	25	Barracks and in mission (one per character)	 	 
+Peerless Bovine	Grenburr	32	Barracks and in mission (later priority)	If max dmg is less than double of min dmg, use 100% boost instead	 
+Bow Attk 1	Yumiyacha	3	Barracks and in mission (one per character)	 	 
+Bow Attk 2	Yumiyacha	8	Barracks and in mission (one per character)	 	 
+Bow Attk 3	Yumiyacha	15	Barracks and in mission (one per character)	 	 
+Bow Attk 4	Yumiyacha	25	Barracks and in mission (one per character)	 	 
+Peerless Bow	Yumiyacha	32	Dmg Dealing/Taking, including Status Effect trigger	 	 
+Desperado (Alosson)	Alosson	8	Dmg Dealing/Taking, including Status Effect trigger	 	 
+Tropical Tailwind	Alosson	15	After every command, Including fever stop	 	 
+Big Bonfire	Alosson	25	Fire Dmg Dealing,	 	 
+Peerless Hedgehog	Alosson	32	Finishing the last blow	 	 
+Horn Attk 1	Wondabarappa	7	Barracks and in mission (one per character)	 	 
+Horn Attk 2	Wondabarappa	15	Barracks and in mission (one per character)	 	 
+Windmill Power	Wondabarappa	25	Dmg Dealing/Taking, Before calculating damage	Crit Chance +30%, Level+3	
+Peerless Dog	Wondabarappa	32	Barracks and in mission (one per character)	NOT affected by team aid	 
+Icky Poison	Jamsch	13	Barracks and in mission (one per character)	 	 
+Out Cold	Jamsch	18	Sleep Dmg Dealing, After status effect calculation	 	 
+Toadstool	Jamsch	25	Finishing the last blow	Mushroom: 200HP, Dmg 10~20, 20% Poison Chance, FIRE and STRIKE element (WTF), No burn rate	
+Peerless Mushroom	Jamsch	32	Barracks and in mission (one per character)	 	 
+Weapon +2	Oohoroc	15	Barracks and in mission (each equipment)	 	 
+Weapon +3	Oohoroc	20	Barracks and in mission (each equipment)	 	 
+Lightning Master	Oohoroc	25	Barracks and in mission (one per character)	 	 
+Flame Master	Oohoroc	25	Barracks and in mission (one per character)	 	 
+Peerless Monkey	Oohoroc	32	CS Exp Gain	 	 
+Antifreeze	Pingrek	10	Barracks and in mission (one per character)	 	 
+Freeze Boost 1	Pingrek	15	Barracks and in mission (one per character)	 	 
+Freeze Boost 2	Pingrek	25	Barracks and in mission (one per character)	 	 
+Peerless Penguin	Pingrek	32	Barracks and in mission (one per character)	Halves Attk Speed, Not Strength	 
+Fire Resist	Cannogabang	12	Barracks and in mission (one per character)	 	 
+Ice Resist	Cannogabang	15	Barracks and in mission (one per character)	 	 
+Poison Resist	Cannogabang	20	Barracks and in mission (one per character)	 	 
+Monster Killer	Cannogabang	25	Barracks and in mission (one per character)	 	 
+Peerless Dragon	Cannogabang	32	Upon Dying (reborn timer)	 	 
+Scythe Attack 1	Ravenous	32	Barracks and in mission (one per character)	 	 
+Desperado (Ravenous)	Ravenous	34	Dmg Dealing/Taking, including Status Effect trigger	 	 
+Samurai Soul	Ravenous	36	Barracks and in mission (each equipment)	 	 
+Scythe Attack 2	Ravenous	38	Barracks and in mission (one per character)	 	 
+Peerless Crow	Ravenous	40	Barracks and in mission (later priority)	 	 
+Rapid Blow	Sonarchy	32	Barracks and in mission (one per character)	 	 
+Bull's Eye	Sonarchy	34	Barracks and in mission (one per character)	 	 
+Night Strike	Sonarchy	36	Dmg Dealing, Before critical res check	 	 
+Sweet Dreams	Sonarchy	38	Sleep Dmg Dealing, when Sleep is Triggered	 	 
+Peerless Bat	Sonarchy	40	EXP Gain	 	 
+Refuse to Lose	Ragewolf	32	Dmg Dealing	 	 
+Claw Boost	Ragewolf	34	Barracks and in mission (one per character)	 	 
+Bolster	Ragewolf	36	Barracks and in mission (one per character)	 	 
+Final Spurt	Ragewolf	38	Dmg Taking	 	 
+Peerless Wolf	Ragewolf	40	Dmg Dealing, Crit landing, Before crit dmg calculation	 	 
+Flash Shower	Naughtyfins	32	(Reserved for Flash Shower)	Status Resist boost +30%, 1% HP gain, Level+2	
+Spear Attack 1	Naughtyfins	34	Barracks and in mission (one per character)	 	 
+Freezem Solid	Naughtyfins	36	Barracks and in mission (one per character)	 	 
+Spear Attack 2	Naughtyfins	38	Barracks and in mission (one per character)	 	 
+Peerless Mermaid	Naughtyfins	40	Upon Dying (heal)	 	 
+Critical Parry	Slogturtle	32	Dmg Dealing/Taking, After critical calculation	 	 
+Embolden	Slogturtle	34	Barracks and in mission (one per character)	 	 
+Antimass	Slogturtle	36	Barracks and in mission (one per character)	 	 
+Helm Master	Slogturtle	38	Barracks and in mission (each equipment)	 	 
+Peerless Turtle	Slogturtle	40	Barracks and in mission (one per character)	 	 
+Incinerate	Covet-Hiss	32	Fire Dmg Dealing,	 	 
+Gun Attack	Covet-Hiss	34	Barracks and in mission (one per character)	 	 
+Growem Green	Covet-Hiss	36	Dmg Dealing	 	 
+Super Singe	Covet-Hiss	38	Barracks and in mission (one per character)	 	 
+Peerless Snake	Covet-Hiss	40	Poison Dmg Dealing, with Actual Poison Chance	 	 
+Agile Attack	Buzzcrave	32	Barracks and in mission (one per character)	 	 
+Pike Attack 1	Buzzcrave	34	Barracks and in mission (one per character)	 	 
+Pike Attack 2	Buzzcrave	36	Barracks and in mission (one per character)	 	 
+Pike Attack 3	Buzzcrave	38	Barracks and in mission (one per character)	 	 
+Peerless Fly	Buzzcrave	40	Barracks and in mission (one per character)	 	

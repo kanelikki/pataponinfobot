@@ -3,7 +3,6 @@ using Discord.Interactions;
 using DiscordBot.Database;
 using DiscordBot.Database.DataTypes;
 using DiscordBot.SlashCommands.AutoCompleters;
-using System.Text;
 
 namespace DiscordBot.SlashCommands
 {

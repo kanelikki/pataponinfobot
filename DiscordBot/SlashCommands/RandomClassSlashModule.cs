@@ -13,7 +13,7 @@ namespace DiscordBot.SlashCommands
         };
         private readonly string[] _dh = new string[]
         {
-            "Ravenous", "Sonarchy", "Ragewolf", "Naughtyfins", "Slogturtle", "CovetHiss", "Buzzcrave"
+            "Ravenous", "Sonarchy", "Ragewolf", "Naughtyfins", "Slogturtle", "Covet-Hiss", "Buzzcrave"
         };
         private readonly Random _random = new Random();
         private readonly string[] _heroes;

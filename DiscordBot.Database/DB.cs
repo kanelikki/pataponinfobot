@@ -40,7 +40,9 @@ namespace DiscordBot.Database
         private void Init()
         {
             InitEach<CsGrindInfo>("CS");
+            InitEach<SetSkillInfo>("SS");
             InitEach<PveEnemyInfo>("PVE");
+            InitEach<HeroInfo>("HERO");
         }
         /// <summary>
         /// Deserializes data from TSV file.
