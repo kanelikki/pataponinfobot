@@ -72,16 +72,16 @@
 "Waros Head 3"	"Dragon"	"None"	0.8	0.8	0.8	1	1	1	1	0.5	1	1	1
 "Cyclops"	"Giant"	"None"	0.8	0.8	0.8	1	1	1	1	1	1	1	1
 "Mutant Cyclops"	"Giant"	"None"	0.8	0.8	0.8	1	1	1	1	1	1	1	1
-"Dragon"	"Dragon"	"None"	0.5	0.8	0.8	1	0.8	1.5	1	0.7	1	1	1
-"Ice Dragon"	"Dragon"	"None"	0.5	0.8	0.8	1	1.5	0.8	1	0.7	1	1	1
-"Dark Dragon"	"Dragon"	"Knockback"	0.5	0.8	0.8	1	1	1	1	0.5	1	1.5	1
+"Fire Dragon Valo"	"Dragon"	"None"	0.5	0.8	0.8	1	0.8	1.5	1	0.7	1	1	1
+"Ice Dragon Inosen"	"Dragon"	"None"	0.5	0.8	0.8	1	1.5	0.8	1	0.7	1	1	1
+"Dark Dragon Libera"	"Dragon"	"Knockback"	0.5	0.8	0.8	1	1	1	1	0.5	1	1.5	1
 "Fenrir"	"Demon"	"None"	0.8	0.8	0.8	1	0.8	0.8	0.8	0.5	1	1	0.5
 "Thunder Lion"	"Demon"	"Critical"	0.8	0.8	0.8	1	0.5	0.5	0.2	0.5	0.5	1	0.5
 "Treant"	"Wood"	"None"	0.8	1.2	0.4	1	1.2	1	1	1	1	1	1
 "Deth Treant"	"Demon"	"None"	0.8	1.2	0.4	1	1.2	1	1	1	1	1	1
 "Gargoyle"	"Demon"	"None"	0.8	0.4	0.6	1	1	1	1	0.7	1	1	1
 "Elite Gargoyle"	"Demon"	"None"	0.8	0.4	0.6	1	1	1	1	0.7	1	1	1
-"Reaper"	"Undead"	"Stagger, Sleep, Tumble"	0.8	0.8	0.8	1	1.2	1	1	0.2	1	2	0.5
+"Reaper (Freohr)"	"Undead"	"Stagger, Sleep, Tumble"	0.8	0.8	0.8	1	1.2	1	1	0.2	1	2	0.5
 "Death"	"Undead"	"Stagger, Sleep, Tumble"	0.8	0.8	0.8	1	1.2	1	1	0.2	1	2	0.5
 "Dragon Puppy"	"Dragon"	"None"	0.6	0.8	0.8	1	0.8	1.5	1	0.7	1	1	1
 "Hyumitto"	"Dragon"	"None"	0.6	0.8	0.8	1	1	1	1	0.2	1	1.5	1

@@ -1,9 +1,7 @@
 ﻿using Discord;
-using Discord.Interactions;
 using Discord.WebSocket;
 using DiscordBot.Database;
 using Microsoft.Extensions.DependencyInjection;
-using System.Reflection;
 
 namespace DiscordBot
 {
@@ -12,7 +10,7 @@ namespace DiscordBot
         private readonly DiscordSocketClient _client;
         private readonly ILogger _logger;
         private readonly IServiceProvider _serviceProvider;
-        private InteractionService _interactionService;
+        private readonly InteractionSender _interactionSender;
         public Bot(ILogger logger, IDbLogger dbLogger = null)
         {
             _logger = logger;
@@ -25,38 +23,17 @@ namespace DiscordBot
             else collection.AddSingleton<IDB, DB>();
             _client = new DiscordSocketClient(config);
             _serviceProvider = collection.BuildServiceProvider();
+            _interactionSender = new InteractionSender(_client, _serviceProvider, _logger);
         }
         public async Task StartAsync()
         {
-
-            _client.Ready += InitAsync;
+            _client.Ready += _interactionSender.InitAsync;
             _client.Log += Log;
 
             await _client.LoginAsync(TokenType.Bot, CoreSettings.BotInfo.Token);
             await _client.StartAsync();
 
             await Task.Delay(-1);
-        }
-
-        private async Task InitAsync()
-        {
-            _interactionService = new InteractionService(_client.Rest);
-            await _interactionService.AddModulesAsync(Assembly.GetExecutingAssembly(), _serviceProvider);
-            await _interactionService.RegisterCommandsToGuildAsync(1055494833021661296);
-
-            _client.InteractionCreated += async (x) =>
-            {
-                var scope = _serviceProvider.CreateScope();
-                var ctx = new SocketInteractionContext(_client, x);
-                try
-                {
-                    await _interactionService.ExecuteCommandAsync(ctx, scope.ServiceProvider);
-                }
-                catch(Exception ex)
-                {
-                    await _logger.Log("Interaction failed: " + ex.Message,LogSeverity.Error);
-                }
-            };
         }
 
         private Task Log(LogMessage msg) => _logger.Log(msg.ToString(), msg.Severity);

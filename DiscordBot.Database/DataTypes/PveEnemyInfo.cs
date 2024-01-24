@@ -6,7 +6,7 @@ namespace DiscordBot.Database.DataTypes
     {
         public string Name { get; set; }
         [Name("Enemy Type")]
-        public EnemyType EnemyType { get; set; }
+        public string  EnemyType { get; set; }
         public string Immunities { get; set; }
         public float SlashTaken { get; set; }
         public float StrikeTaken { get; set; }

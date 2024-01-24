@@ -40,8 +40,9 @@ namespace DiscordBot.SlashCommands
             embed.AddField("Weak Against", BuildStringFromWeakness(info.GetWeaknesses()));
             await RespondAsync(embed: embed.Build());
         }
-        private string BuildStringFromWeakness(KeyValuePair<AttackElement, float>[] weaknesses)
+        internal string BuildStringFromWeakness(KeyValuePair<AttackElement, float>[] weaknesses)
         {
+            if (weaknesses.Length < 1) return "None";
             List<string> res = new List<string>();
             foreach (var weakness in weaknesses)
             {
