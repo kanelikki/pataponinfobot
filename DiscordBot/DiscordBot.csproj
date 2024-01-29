@@ -15,4 +15,10 @@
     <ProjectReference Include="..\DiscordBot.Database\DiscordBot.Database.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="token.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

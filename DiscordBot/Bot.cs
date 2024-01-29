@@ -30,8 +30,17 @@ namespace DiscordBot
             _client.Ready += _interactionSender.InitAsync;
             _client.Log += Log;
 
-            await _client.LoginAsync(TokenType.Bot, CoreSettings.BotInfo.Token);
-            await _client.StartAsync();
+            try
+            {
+                var token = await new TokenLoader().GetTokenAsync(_logger);
+                await _client.LoginAsync(TokenType.Bot, token);
+                await _client.StartAsync();
+            }
+            catch(Exception ex)
+            {
+                await _logger.Log(ex.Message, LogSeverity.Critical);
+                throw;
+            }
 
             await Task.Delay(-1);
         }

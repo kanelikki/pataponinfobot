@@ -398,4 +398,4 @@ FodyWeavers.xsd
 *.sln.iml
 
 # Do not share token
-BotInfo.cs
+token.txt
