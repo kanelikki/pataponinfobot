@@ -11,7 +11,7 @@ namespace DiscordBot
         {
             try
             {
-                var token = await File.ReadAllTextAsync(_tokenPath);
+                var token = (await File.ReadAllTextAsync(_tokenPath)).Trim();
                 TokenUtils.ValidateToken(TokenType.Bot, token);
                 return token;
             }

@@ -64,14 +64,22 @@ namespace DiscordBot.SlashCommands.AutoCompleters
             foreach (var choice in _bigChoices)
             {
                 //AutoCompleteResult works when value is ALSO string
-                autoCompleteResult.Add(new AutocompleteResult(choice, choice));
+                autoCompleteResult.Add(new AutocompleteResult(GetDisplayName(choice), choice));
             }
             return autoCompleteResult;
         }
         /// <summary>
+        /// Gets displayed name in the choice menu. Override this for different display name.
+        /// </summary>
+        /// <remarks>This is called when the choice data is initialised.</remarks>
+        /// <param name="value">The choice value.</param>
+        /// <returns>Name for display.</returns>
+        protected virtual string GetDisplayName(string value) => value;
+        /// <summary>
         /// Get name for autocompletion that has possibly over 25 amount of value.
         /// </summary>
-        /// <param name="input"></param>
+        /// <remarks>This is value for choice. For displayed name in the choices, use <see cref="GetDisplayName(string)"/>.</remarks>
+        /// <param name="input">The one line of the whole data.</param>
         /// <remarks>The return value can be unique per each data, but NOT ALWAYS UNIQUE.</remarks>
         /// <returns>Autocompletion option, as string.</returns>
         protected abstract string GetBigChoicesName(T input);
@@ -83,7 +91,7 @@ namespace DiscordBot.SlashCommands.AutoCompleters
         public override async Task<AutocompletionResult> GenerateSuggestionsAsync(IInteractionContext context, IAutocompleteInteraction autocompleteInteraction, IParameterInfo parameter, IServiceProvider services)
         {
             return AutocompletionResult.FromSuccess(
-                    _autocompleteResults.Where(s => CompareForAutocompletion(s.Name, (string)autocompleteInteraction.Data.Current.Value))
+                    _autocompleteResults.Where(s => CompareForAutocompletion((string)s.Value, (string)autocompleteInteraction.Data.Current.Value))
                     .Take(_resultAmount)
                 );
         }

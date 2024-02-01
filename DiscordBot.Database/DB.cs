@@ -43,6 +43,9 @@ namespace DiscordBot.Database
             InitEach<SetSkillInfo>("SS");
             InitEach<PveEnemyInfo>("PVE");
             InitEach<HeroInfo>("HERO");
+            InitEach<BSEnchantInfo>("BSEnchant");
+            InitEach<BSInfo>("BSData");
+            InitEach<MaterialInfo>("Material");
         }
         /// <summary>
         /// Deserializes data from TSV file.
