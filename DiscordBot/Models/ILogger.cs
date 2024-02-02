@@ -2,7 +2,7 @@
 {
     public interface ILogger
     {
-        public Task Log(string message, Discord.LogSeverity severity);
+        public Task LogAsync(string message, Discord.LogSeverity severity);
         /// <summary>
         /// Logs exception as json.
         /// </summary>

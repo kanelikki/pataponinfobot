@@ -54,7 +54,7 @@ namespace DiscordBot.SlashCommands
                 await RespondAsync($"**{info.Equipment} [{enchant}]** does not exist LMFAO. The item is {(info.IsWeapon?"WEAPON":"ARMOUR")}!");
                 return;
             }
-            var result = BSRequirementModel.GetEmpty();
+            var result = UpgradeRequirementModel.GetEmpty();
             for (int i = fromLevel; i < toLevel; i++)
             {
                 if (!_enchantInfo.TryGetValue(enchant.ToString(), out BSEnchantInfo enchantInfo))
@@ -96,13 +96,13 @@ namespace DiscordBot.SlashCommands
             }
             await RespondAsync(embed: embed.Build());
         }
-        internal BSRequirementModel? CalculateRequirement(int itemLevel, int baseKaching, double multiplier)
+        internal UpgradeRequirementModel? CalculateRequirement(int itemLevel, int baseKaching, double multiplier)
         {
             if (itemLevel > 0 && itemLevel <= 40)
             {
                 var preData = _preCalculated[itemLevel - 1];
                 int kaching = (int)Math.Round(baseKaching * multiplier * preData.Kaching);
-                return new BSRequirementModel()
+                return new UpgradeRequirementModel()
                 {
                     Kaching = kaching,
                     MaterialAmounts = preData.MaterialAmounts
@@ -122,7 +122,7 @@ namespace DiscordBot.SlashCommands
         private BSBaseRequirementModel GetOneRequirement(int level)
         {
             //material
-            var material = getMaterialRequirements(level);
+            var material = GetMaterialRequirements(level);
             //ka-ching
             return new BSBaseRequirementModel()
             {
@@ -130,16 +130,16 @@ namespace DiscordBot.SlashCommands
                 Kaching = 0.375 * level * level + 1.125 * level + 1
             };
         }
-        private int[] getMaterialRequirements(int level)
+        private int[] GetMaterialRequirements(int level)
         {
             var res = new int[5];
             for (int tier = 1; tier < 6; tier++)
             {
-                res[tier - 1] = getMaterialRequirementByTier(level, tier);
+                res[tier - 1] = GetMaterialRequirementByTier(level, tier);
             }
             return res;
         }
-        private int getMaterialRequirementByTier(int level, int tier)
+        private int GetMaterialRequirementByTier(int level, int tier)
         {
             if (tier == 1) return level;
             else if (level <= 20)

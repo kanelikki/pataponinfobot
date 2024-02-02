@@ -17,7 +17,7 @@ namespace DiscordBot
             }
             catch (Exception ex)
             {
-                await logger.Log("[!!! Token Failure !!!]\nFailed to get token! The bot cannot be launched.", LogSeverity.Critical);
+                await logger.LogAsync("[!!! Token Failure !!!]\nFailed to get token! The bot cannot be launched.", LogSeverity.Critical);
                 string message = "An unknown error is occurred. Our expert cat will try to fix the issue soon.";
                 switch (ex)
                 {
@@ -43,7 +43,7 @@ namespace DiscordBot
                         message = "An I/O error occurred while opening the file. Maybe TOKEN FILE is broken or in use?";
                         break;
                 }
-                await logger.Log($"[!!!] {message}", LogSeverity.Critical);
+                await logger.LogAsync($"[!!!] {message}", LogSeverity.Critical);
                 throw;
             }
         }

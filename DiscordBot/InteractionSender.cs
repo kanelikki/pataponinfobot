@@ -29,14 +29,25 @@ namespace DiscordBot
             //GUILD to register command
             await _interactionService.RegisterCommandsToGuildAsync(1055494833021661296);
             _client.InteractionCreated += SendInteraction;
-            await _logger.Log("*** INTERACTION POWER LAUNCHED! ***", LogSeverity.Info);
+            _interactionService.InteractionExecuted += _interactionService_InteractionExecuted;
+            await _logger.LogAsync("*** INTERACTION POWER LAUNCHED! ***", LogSeverity.Info);
         }
+
+        private async Task _interactionService_InteractionExecuted(ICommandInfo commandInfo, IInteractionContext interactionContext, IResult result)
+        {
+            if (!result.IsSuccess)
+            {
+                await interactionContext.Interaction.RespondAsync("> Oh no! Something bad happened. Check the log, admins!" );
+                await _logger.LogAsync($"Interaction failure issue: {result.ErrorReason}", LogSeverity.Error);
+            }
+        }
+
         private async Task SendInteraction(SocketInteraction interaction)
         {
-            var scope = _serviceProvider.CreateScope();
-            var ctx = new SocketInteractionContext(_client, interaction);
             try
             {
+                var scope = _serviceProvider.CreateScope();
+                var ctx = new SocketInteractionContext(_client, interaction);
                 if (interaction.Type == InteractionType.ApplicationCommand
                     && _cooldownManager.IsCooldown(interaction.User, out var cooldown))
                 {
@@ -46,10 +57,11 @@ namespace DiscordBot
                     return;
                 }
                 await _interactionService.ExecuteCommandAsync(ctx, scope.ServiceProvider);
+
             }
             catch(Exception ex)
             {
-                await _logger.Log("Interaction failed: " + ex.Message,LogSeverity.Error);
+                await _logger.LogAsync("Interaction failed: " + ex.Message,LogSeverity.Error);
             }
         }
     }

@@ -8,7 +8,7 @@ await new Bot(new ConsoleLogger(), new ConsoleDBLogger())
 
 public class ConsoleLogger : ILogger
 {
-    public Task Log(string message, LogSeverity severity)
+    public Task LogAsync(string message, LogSeverity severity)
     {
         return Console.Out.WriteAsync($"[{severity}] {message}\n");
     }

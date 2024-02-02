@@ -38,13 +38,13 @@ namespace DiscordBot
             }
             catch(Exception ex)
             {
-                await _logger.Log(ex.Message, LogSeverity.Critical);
+                await _logger.LogAsync(ex.Message, LogSeverity.Critical);
                 throw;
             }
 
             await Task.Delay(-1);
         }
 
-        private Task Log(LogMessage msg) => _logger.Log(msg.ToString(), msg.Severity);
+        private Task Log(LogMessage msg) => _logger.LogAsync(msg.ToString(), msg.Severity);
     }
 }
