@@ -30,14 +30,14 @@ namespace DiscordBot
             await _interactionService.RegisterCommandsToGuildAsync(1055494833021661296);
             _client.InteractionCreated += SendInteraction;
             _interactionService.InteractionExecuted += _interactionService_InteractionExecuted;
-            await _logger.LogAsync("*** INTERACTION POWER LAUNCHED! ***", LogSeverity.Info);
+            await _logger.LogAsync("*** INTERACTION POWER LAUNCHED! *** :: Now you can use your command :)", LogSeverity.Info);
         }
 
         private async Task _interactionService_InteractionExecuted(ICommandInfo commandInfo, IInteractionContext interactionContext, IResult result)
         {
             if (!result.IsSuccess)
             {
-                await interactionContext.Interaction.RespondAsync("> Oh no! Something bad happened. Check the log, admins!" );
+                await interactionContext.Interaction.RespondAsync("> *Oh no! An internal error occurred. Check the log, admins!*" );
                 await _logger.LogAsync($"Interaction failure issue: {result.ErrorReason}", LogSeverity.Error);
             }
         }

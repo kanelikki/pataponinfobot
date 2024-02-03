@@ -46,9 +46,9 @@ namespace DiscordBot.SlashCommands.AutoCompleters
         /// Gets table dictionary from <see cref="DB"/>. This distinguishes what kind of data is.
         /// </summary>
         /// <returns>The table dictionary value.</returns>
-        protected Dictionary<string, T> GetData()
+        protected System.Collections.ObjectModel.ReadOnlyDictionary<string, T> GetData()
         {
-            if (!_db.TryGetTable(_tableName, out Dictionary<string, T> result))
+            if (!_db.TryGetTable(out System.Collections.ObjectModel.ReadOnlyDictionary<string, T> result))
             {
                 throw new KeyNotFoundException($"Couldn't find data with \"{_tableName}\" from database");
             }

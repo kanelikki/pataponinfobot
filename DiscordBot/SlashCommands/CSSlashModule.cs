@@ -8,10 +8,10 @@ namespace DiscordBot.SlashCommands
 {
     public class CSSlashModule : InteractionModuleBase<SocketInteractionContext>
     {
-        private readonly Dictionary<string, CsGrindInfo> _info;
+        private readonly System.Collections.ObjectModel.ReadOnlyDictionary<string, CsGrindInfo> _info;
         public CSSlashModule(IDB db):base()
         {
-            if (db.TryGetTable<CsGrindInfo>("CS", out var info))
+            if (db.TryGetTable<CsGrindInfo>(out var info))
             {
                 _info = info;
             }

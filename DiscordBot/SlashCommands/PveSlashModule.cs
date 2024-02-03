@@ -8,10 +8,10 @@ namespace DiscordBot.SlashCommands
 {
     public class PveSlashModule : InteractionModuleBase<SocketInteractionContext>
     {
-        private readonly Dictionary<string, PveEnemyInfo> _info;
+        private readonly System.Collections.ObjectModel.ReadOnlyDictionary<string, PveEnemyInfo> _info;
         public PveSlashModule(IDB db):base()
         {
-            if (db.TryGetTable<PveEnemyInfo>("PVE", out var info))
+            if (db.TryGetTable<PveEnemyInfo>(out var info))
             {
                 _info = info;
             }

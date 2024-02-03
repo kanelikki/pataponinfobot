@@ -8,10 +8,10 @@ namespace DiscordBot.SlashCommands
 {
     public class SSSlashModule : InteractionModuleBase<SocketInteractionContext>
     {
-        private readonly Dictionary<string, SetSkillInfo> _info;
+        private readonly System.Collections.ObjectModel.ReadOnlyDictionary<string, SetSkillInfo> _info;
         public SSSlashModule(IDB db):base()
         {
-            if (db.TryGetTable<SetSkillInfo>("SS", out var info))
+            if (db.TryGetTable<SetSkillInfo>(out var info))
             {
                 _info = info;
             }

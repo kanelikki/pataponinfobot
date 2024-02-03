@@ -41,7 +41,7 @@ namespace DiscordBot.SlashCommands
                     await RespondAsync("Wrong parameter.");
                     return;
             }
-            await RespondAsync($"My{((type==ClassGroup.Any)?"":$" *{type.ToString()}*")} choice is **{result}**!");
+            await RespondAsync($"My{((type == ClassGroup.Any) ? "" : $" *{type}*")} choice is **{result}**!");
         }
         private string GetRandom(string[] data) => data[_random.Next(0, data.Length)];
     }

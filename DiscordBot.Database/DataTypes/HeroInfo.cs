@@ -22,6 +22,8 @@ namespace DiscordBot.Database.DataTypes
         [Name("CS inherit to")]
         public string InheritTo { get; set; }
 
+        public static string DBName => "HERO";
+
         public string GetKey() => ClassName;
     }
 }

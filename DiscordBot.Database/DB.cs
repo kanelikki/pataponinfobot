@@ -1,4 +1,5 @@
 ﻿using DiscordBot.Database.DataTypes;
+using System.Collections.ObjectModel;
 namespace DiscordBot.Database
 {
     /// <summary>
@@ -12,10 +13,6 @@ namespace DiscordBot.Database
         private IDbLogger? _dbLogger;
         private readonly Dictionary<string, object> _data = //object is dictionary lol fuck it we ball
             new Dictionary<string, object>(StringComparer.OrdinalIgnoreCase);
-        /// <summary>
-        /// The optional comparers for some tables. Default is case insensitive. Reserved for future extensibility.
-        /// </summary>
-        private readonly Dictionary<string, StringComparer> _specialComparers = new Dictionary<string, StringComparer>();
         /// <summary>
         /// Starts the database.
         /// </summary>
@@ -39,30 +36,31 @@ namespace DiscordBot.Database
         /// </summary>
         private void Init()
         {
-            InitEach<CsGrindInfo>("CS");
-            InitEach<SetSkillInfo>("SS");
-            InitEach<PveEnemyInfo>("PVE");
-            InitEach<HeroInfo>("HERO");
-            InitEach<BSEnchantInfo>("BSEnchant");
-            InitEach<BSInfo>("BSData");
-            InitEach<MaterialInfo>("Material");
-            InitEach<RareponInfo>("Rarepon");
-            InitEach<RareClassInfo>("RareClass");
+            InitEach<CsGrindInfo>();
+            InitEach<SetSkillInfo>();
+            InitEach<PveEnemyInfo>();
+            InitEach<HeroInfo>();
+            InitEach<BSEnchantInfo>();
+            InitEach<BSInfo>();
+            InitEach<MaterialInfo>();
+            InitEach<RareponInfo>();
+            InitEach<RareClassInfo>();
         }
         /// <summary>
         /// Deserializes data from TSV file.
         /// </summary>
         /// <typeparam name="T">The type to deserialize.</typeparam>
         /// <param name="name">The database name, SAME AS FILE NAME WITHOUT EXTENSION (the file MUST be ".tsv"), it works also as a "key"</param>
-        private void InitEach<T>(string name) where T : IInfo
+        private void InitEach<T>() where T : IInfo
         {
             try
             {
+                var name = T.DBName;
                 var file = Path.Combine(_dataPath, name + ".tsv");
                 var parsed = _tsvParser.Parse<T>(file,
-                    _specialComparers.ContainsKey(name) ? _specialComparers[name]:StringComparer.OrdinalIgnoreCase //default
+                    StringComparer.OrdinalIgnoreCase //default
                 );
-                if (parsed != null) _data.Add(name, parsed);
+                if (parsed != null) _data.Add(name, new ReadOnlyDictionary<string, T>(parsed));
             }
             catch(Exception ex)
             {
@@ -76,14 +74,14 @@ namespace DiscordBot.Database
         /// <param name="tableName">the name of the table (aka KEY for the TSV file).</param>
         /// <param name="result">the table with the key. <c>null</c> if the data doesn't exist.</param>
         /// <returns><c>true</c> if the table was found and it's valid, otherwise <c>false</c>.</returns>
-        public bool TryGetTable<T>(string tableName, out Dictionary<string, T>? result) where T:IInfo
+        public bool TryGetTable<T>(out ReadOnlyDictionary<string, T>? result) where T:IInfo
         {
-            if (!_data.TryGetValue(tableName, out var data))
+            if (!_data.TryGetValue(T.DBName, out var data))
             {
                 result = null;
                 return false;
             }
-            result = data as Dictionary<string, T>;
+            result = data as ReadOnlyDictionary<string, T>;
             return result != null;
         }
     }

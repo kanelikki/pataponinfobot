@@ -1,9 +1,5 @@
 ﻿using DiscordBot.Database.DataTypes;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Collections.ObjectModel;
 
 namespace DiscordBot.Database
 {
@@ -12,6 +8,6 @@ namespace DiscordBot.Database
     /// </summary>
     public interface IDB
     {
-        public bool TryGetTable<T>(string tableName, out Dictionary<string, T>? result) where T : IInfo;
+        public bool TryGetTable<T>(out ReadOnlyDictionary<string, T>? result) where T : IInfo;
     }
 }

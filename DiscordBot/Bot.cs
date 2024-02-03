@@ -27,6 +27,8 @@ namespace DiscordBot
         }
         public async Task StartAsync()
         {
+            _client.Connected += async ()
+                => await _logger.LogAsync("[!] DO NOT USE any command to this bot yet until INTERACTION POWER is launched [!]", LogSeverity.Info);
             _client.Ready += _interactionSender.InitAsync;
             _client.Log += Log;
 

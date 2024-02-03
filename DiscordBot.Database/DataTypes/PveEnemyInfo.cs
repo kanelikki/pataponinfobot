@@ -19,6 +19,9 @@ namespace DiscordBot.Database.DataTypes
         public float SoundTaken { get; set; }
         public float LightTaken { get; set; }
         public float DarkTaken { get; set; }
+
+        public static string DBName => "PVE";
+
         public string GetKey() => Name;
         [Ignore]
         private Dictionary<AttackElement, float> _weaknessPairs;

@@ -10,21 +10,21 @@ namespace DiscordBot.SlashCommands
 {
     public class BSSlashModule : InteractionModuleBase<SocketInteractionContext>
     {
-        private readonly Dictionary<string, BSEnchantInfo> _enchantInfo;
-        private readonly Dictionary<string, BSInfo> _info;
-        private readonly Dictionary<string, MaterialInfo> _materialInfo;
+        private readonly System.Collections.ObjectModel.ReadOnlyDictionary<string, BSEnchantInfo> _enchantInfo;
+        private readonly System.Collections.ObjectModel.ReadOnlyDictionary<string, BSInfo> _info;
+        private readonly System.Collections.ObjectModel.ReadOnlyDictionary<string, MaterialInfo> _materialInfo;
         private BSBaseRequirementModel[] _preCalculated;
         public BSSlashModule(IDB db):base()
         {
-            if (db.TryGetTable<BSInfo>("BSData", out var info))
+            if (db.TryGetTable<BSInfo>(out var info))
             {
                 _info = info;
             }
-            if (db.TryGetTable<BSEnchantInfo>("BSEnchant", out var enchantInfo))
+            if (db.TryGetTable<BSEnchantInfo>(out var enchantInfo))
             {
                 _enchantInfo = enchantInfo;
             }
-            if (db.TryGetTable<MaterialInfo>("Material", out var materialInfo))
+            if (db.TryGetTable<MaterialInfo>(out var materialInfo))
             {
                 _materialInfo = materialInfo;
             }
