@@ -198,7 +198,7 @@ namespace DiscordBot.SlashCommands
             isAdded |= AddInfo(items,nameof(info.Stamina), info.Stamina, 0);
             if (info.MinDmg != 0 || info.MaxDmg != 0)
             {
-                items.Add($"**Damage**: {info.MinDmg.ToString("+#;-#;")} ~ {info.MaxDmg.ToString("+#;-#;")}");
+                items.Add($"**Damage**: {info.MinDmg.ToString("+#;-#;+0")} ~ {info.MaxDmg.ToString("+#;-#;+0")}");
                 isAdded = true;
             }
             isAdded |= AddInfo(items, "Mov. Speed", info.MovementSpeed, 1, "**{0}** : x{1}")
