@@ -38,36 +38,34 @@ namespace DiscordBot.Tests
                     }
                 }
             });
-            System.Collections.ObjectModel.ReadOnlyDictionary<string, RareponInfo> _rareData = new(
-                new Dictionary<string, RareponInfo>()
+            System.Collections.ObjectModel.ReadOnlyDictionary<string, RareponCalcInfo> _rareData = new(
+                new Dictionary<string, RareponCalcInfo>()
             {
                 {
                     "Fumya",
-                    new RareponInfo()
+                    new RareponCalcInfo()
                     {
                         RareponType = P2Rarepon.Fumya,
                         Kaching = 2,
-                        Material1 = 3,
-                        Material2 = 1,
-                        Material3 = 1,
-                        Material4 = 1
+                        Material1Tier = 3,
+                        Material2Tier = 1,
+                        Material3Tier = 1,
+                        Material4Tier = 1
                     }
                 },
                 {
                     "Mogyu",
-                    new RareponInfo()
+                    new RareponCalcInfo()
                     {
                         RareponType = P2Rarepon.Mogyu,
                         Kaching = 5.5,
-                        Material1 = 4,
-                        Material2 = 5,
-                        Material3 = 3,
-                        Material4 = 4
+                        Material1Tier = 4,
+                        Material2Tier = 5,
+                        Material3Tier = 3,
+                        Material4Tier = 4
                     }
                 }
             });
-
-
         public P2RareponCalculationTest()
         {
             _module = new RareponSlashModule(Mock.Of<IDB>());
@@ -95,6 +93,6 @@ namespace DiscordBot.Tests
             Assert.Equal(0, result.MaterialAmounts[4]);
         }
         private delegate void GetTable(out System.Collections.ObjectModel.ReadOnlyDictionary<string, RareClassInfo> data);
-        private delegate void GetTable2(out System.Collections.ObjectModel.ReadOnlyDictionary<string, RareponInfo> data);
+        private delegate void GetTable2(out System.Collections.ObjectModel.ReadOnlyDictionary<string, RareponCalcInfo> data);
     }
 }

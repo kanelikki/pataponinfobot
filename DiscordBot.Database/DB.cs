@@ -43,8 +43,9 @@ namespace DiscordBot.Database
             InitEach<BSEnchantInfo>();
             InitEach<BSInfo>();
             InitEach<MaterialInfo>();
-            InitEach<RareponInfo>();
+            InitEach<RareponCalcInfo>();
             InitEach<RareClassInfo>();
+            InitEach<RareponInfo>();
         }
         /// <summary>
         /// Deserializes data from TSV file.

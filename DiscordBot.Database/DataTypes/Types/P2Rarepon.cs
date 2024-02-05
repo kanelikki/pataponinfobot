@@ -16,7 +16,7 @@
         Wanda,
         Mofu,
         Gyaba,
-        Chigyoubi,
+        Chigyobi,
         Kanokko,
         Mogyu
     }
