@@ -38,7 +38,7 @@ namespace DiscordBot
             if (!result.IsSuccess)
             {
                 await interactionContext.Interaction.RespondAsync("> *Oh no! An internal error occurred. Check the log, admins!*" );
-                await _logger.LogAsync($"Interaction failure issue: {result.ErrorReason}", LogSeverity.Error);
+                await _logger.LogAsync($"Interaction failure issue ({result.Error}) : {result.ErrorReason}", LogSeverity.Error);
             }
         }
 

@@ -21,6 +21,7 @@ namespace DiscordBot
             var collection = new ServiceCollection();
             if (dbLogger != null) collection.AddSingleton<IDB, DB>(_ => new DB(dbLogger));
             else collection.AddSingleton<IDB, DB>();
+            collection.AddSingleton<ISettingProvider, SettingProvider>(_ => new SettingProvider(_logger));
             _client = new DiscordSocketClient(config);
             _serviceProvider = collection.BuildServiceProvider();
             _interactionSender = new InteractionSender(_client, _serviceProvider, _logger);

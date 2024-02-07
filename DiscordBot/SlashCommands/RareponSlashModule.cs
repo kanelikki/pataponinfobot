@@ -3,7 +3,6 @@ using Discord.Interactions;
 using DiscordBot.Database;
 using DiscordBot.Database.DataTypes;
 using DiscordBot.SlashCommands.Models;
-using System.Reflection.Emit;
 using System.Text;
 
 namespace DiscordBot.SlashCommands
@@ -15,7 +14,8 @@ namespace DiscordBot.SlashCommands
         private readonly System.Collections.ObjectModel.ReadOnlyDictionary<string, RareponInfo> _rareponInfo;
         private readonly System.Collections.ObjectModel.ReadOnlyDictionary<string, RareClassInfo> _classInfo;
         private readonly System.Collections.ObjectModel.ReadOnlyDictionary<string, MaterialInfo> _materialInfo;
-        public RareponSlashModule(IDB db) : base()
+        private readonly Uri? _imageUrl;
+        public RareponSlashModule(IDB db, ISettingProvider settingProvider) : base()
         {
             if (db.TryGetTable<RareponInfo>(out var rareponInfo))
             {
@@ -33,6 +33,9 @@ namespace DiscordBot.SlashCommands
             {
                 _materialInfo = materialInfo;
             }
+            var url = settingProvider.Setting.ImageUrl;
+            if (url == null) _imageUrl = null;
+            else _imageUrl = new Uri(url);
         }
         [SlashCommand("upgrade", "Calculates material and Ka-Ching fo Rarepon.")]
         public async Task GetRareponUpgradeInfo(P2Rarepon rarepon, P2Class className, int fromLevel, int toLevel)
@@ -189,7 +192,17 @@ namespace DiscordBot.SlashCommands
                 }, 1, "**{0}** : {1:P0}"
                 );
             embed.WithFooter("Elemental weapon has pure elemental type! For example, Ice sword DOESN'T apply vs sword.");
-            await RespondAsync(embed: embed.Build());
+            if (_imageUrl != null)
+            {
+                var file = $"./Rarepons/{data.Name}.png";
+                embed.WithThumbnailUrl(new Uri(_imageUrl, file).ToString());
+                var embedBuilt = embed.Build();
+                await RespondAsync(embed:embedBuilt);
+            }
+            else
+            {
+                await RespondAsync(embed:embed.Build());
+            }
         }
         private void SetBasicInfo(EmbedBuilder embed, RareponInfo info)
         {
