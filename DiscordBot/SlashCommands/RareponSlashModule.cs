@@ -33,7 +33,7 @@ namespace DiscordBot.SlashCommands
             {
                 _materialInfo = materialInfo;
             }
-            var url = settingProvider.Setting.ImageUrl;
+            var url = settingProvider?.Setting?.ImageUrl;
             if (url == null) _imageUrl = null;
             else _imageUrl = new Uri(url);
         }
@@ -196,13 +196,8 @@ namespace DiscordBot.SlashCommands
             {
                 var file = $"./Rarepons/{data.Name}.png";
                 embed.WithThumbnailUrl(new Uri(_imageUrl, file).ToString());
-                var embedBuilt = embed.Build();
-                await RespondAsync(embed:embedBuilt);
             }
-            else
-            {
-                await RespondAsync(embed:embed.Build());
-            }
+            await RespondAsync(embed:embed.Build());
         }
         private void SetBasicInfo(EmbedBuilder embed, RareponInfo info)
         {

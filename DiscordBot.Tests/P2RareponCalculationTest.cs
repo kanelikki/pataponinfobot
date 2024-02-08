@@ -68,7 +68,7 @@ namespace DiscordBot.Tests
             });
         public P2RareponCalculationTest()
         {
-            _module = new RareponSlashModule(Mock.Of<IDB>());
+            _module = new RareponSlashModule(Mock.Of<IDB>(), Mock.Of<ISettingProvider>());
         }
         [Theory]
         [InlineData(P2Class.Yumipon, P2Rarepon.Fumya, 0, 5, 420,

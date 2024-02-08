@@ -46,6 +46,7 @@ namespace DiscordBot.Database
             InitEach<RareponCalcInfo>();
             InitEach<RareClassInfo>();
             InitEach<RareponInfo>();
+            InitEach<BossFarmingInfo>();
         }
         /// <summary>
         /// Deserializes data from TSV file.
