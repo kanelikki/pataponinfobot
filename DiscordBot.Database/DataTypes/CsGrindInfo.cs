@@ -27,8 +27,6 @@ namespace DiscordBot.Database.DataTypes
         [Optional]
         public string Detail { get; set; } //from Mielikki's note
 
-        public static string DBName => "CS";
-
         public string GetKey()
         {
             return ClassName + Level + Group;

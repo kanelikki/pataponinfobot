@@ -11,7 +11,8 @@ namespace DiscordBot.Tests
         private readonly Dictionary<string, PveEnemyInfo> _enemyInfo;
         public PveEnemyParserTests()
         {
-            _enemyInfo = new TsvParser().Parse<PveEnemyInfo>("data/PVE.tsv", StringComparer.OrdinalIgnoreCase);
+            _enemyInfo = new DB().Parse("data/PveEnemyInfo.tsv", typeof(PveEnemyInfo))
+                .ToDictionary(v => v.Key, v => (PveEnemyInfo)v.Value);
         }
         [Fact]
         public void PveParseString_EnemyTypeTest()
@@ -37,7 +38,7 @@ namespace DiscordBot.Tests
         [Fact]
         public void PveSlashModule_EmptyWeakness_ReturnsNone()
         {
-            var module = new PveSlashModule(Mock.Of<IDB>());
+            var module = new EnemyInfoSlashModule(Mock.Of<IDB>());
             var result = module.BuildStringFromWeakness(Array.Empty<KeyValuePair<AttackElement, float>>());
             Assert.Equal("None", result);
         }

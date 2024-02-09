@@ -5,7 +5,7 @@ namespace DiscordBot.SlashCommands.Models
     /// <summary>
     /// Contains requirement info. This can be a unit, one level, or multiple level.
     /// </summary>
-    /// <seealso cref="BSSlashModule"/>
+    /// <seealso cref="BlacksmithSlashModule"/>
     public record UpgradeRequirementModel
     {
         /// <summary>

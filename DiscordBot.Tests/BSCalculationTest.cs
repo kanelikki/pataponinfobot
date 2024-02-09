@@ -8,7 +8,7 @@ namespace DiscordBot.Tests
     //This tests with real Patapon 3 Blacksmith value.
     public class BSCalculationTest
     {
-        private BSSlashModule _module;
+        private BlacksmithSlashModule _module;
         Dictionary<Enchant, double> _enchantInfo = new Dictionary<Enchant, double>();
         public BSCalculationTest()
         {
@@ -27,7 +27,7 @@ namespace DiscordBot.Tests
                     _enchantInfo.Add(enchant, _baseEnc[i]);
                 }
             }
-            _module = new BSSlashModule(Mock.Of<IDB>());
+            _module = new BlacksmithSlashModule(Mock.Of<IDB>());
         }
         //testing test
         [Fact]

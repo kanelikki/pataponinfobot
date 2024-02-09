@@ -16,8 +16,6 @@ namespace DiscordBot.Database.DataTypes
         [Name("Material4")]
         public int Material4Tier { get; set; }
 
-        public static string DBName => "RareponCalc";
-
         public string GetKey() => RareponType.ToString();
 
         public int GetMaterial(int index) => index switch

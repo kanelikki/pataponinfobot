@@ -5,7 +5,7 @@ namespace DiscordBot.SlashCommands.Models
     /// <summary>
     /// For only base data for multiplying.
     /// </summary>
-    /// <seealso cref="BSSlashModule"/>
+    /// <seealso cref="BlacksmithSlashModule"/>
     public record BSBaseRequirementModel
     {
         /// <summary>

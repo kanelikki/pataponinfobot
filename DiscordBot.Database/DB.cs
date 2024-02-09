@@ -1,5 +1,8 @@
-﻿using DiscordBot.Database.DataTypes;
+﻿using CsvHelper;
+using DiscordBot.Database.DataTypes;
 using System.Collections.ObjectModel;
+using System.Reflection;
+[assembly: System.Runtime.CompilerServices.InternalsVisibleTo("DiscordBot.Tests")]
 namespace DiscordBot.Database
 {
     /// <summary>
@@ -9,17 +12,15 @@ namespace DiscordBot.Database
     public class DB : IDB
     {
         private const string _dataPath = "data/";
-        private readonly TsvParser _tsvParser;
         private IDbLogger? _dbLogger;
-        private readonly Dictionary<string, object> _data = //object is dictionary lol fuck it we ball
-            new Dictionary<string, object>(StringComparer.OrdinalIgnoreCase);
+        private readonly Dictionary<Type, Dictionary<string, IInfo>> _data =
+            new Dictionary<Type, Dictionary<string, IInfo>>();
         /// <summary>
         /// Starts the database.
         /// </summary>
         /// <remarks>You can use with <see cref="Microsoft.Extensions.DependencyInjection.ServiceCollection.AddSingleton"/>.</remarks>
         public DB(IDbLogger? logger = null)
         {
-            _tsvParser = new TsvParser();
             _dbLogger = logger;
             Init();
         }
@@ -36,33 +37,27 @@ namespace DiscordBot.Database
         /// </summary>
         private void Init()
         {
-            InitEach<CsGrindInfo>();
-            InitEach<SetSkillInfo>();
-            InitEach<PveEnemyInfo>();
-            InitEach<HeroInfo>();
-            InitEach<BSEnchantInfo>();
-            InitEach<BSInfo>();
-            InitEach<MaterialInfo>();
-            InitEach<RareponCalcInfo>();
-            InitEach<RareClassInfo>();
-            InitEach<RareponInfo>();
-            InitEach<BossFarmingInfo>();
+            var dbTypes = Assembly.GetExecutingAssembly().GetTypes()
+                .Where(t => t.IsAssignableTo(typeof(IInfo)) && t != typeof(IInfo));
+            foreach (var dbType in dbTypes)
+            {
+                InitEach(dbType);
+            }
         }
         /// <summary>
         /// Deserializes data from TSV file.
         /// </summary>
         /// <typeparam name="T">The type to deserialize.</typeparam>
         /// <param name="name">The database name, SAME AS FILE NAME WITHOUT EXTENSION (the file MUST be ".tsv"), it works also as a "key"</param>
-        private void InitEach<T>() where T : IInfo
+        private void InitEach(Type type)
         {
             try
             {
-                var name = T.DBName;
+                var name = type.Name;
                 var file = Path.Combine(_dataPath, name + ".tsv");
-                var parsed = _tsvParser.Parse<T>(file,
-                    StringComparer.OrdinalIgnoreCase //default
-                );
-                if (parsed != null) _data.Add(name, new ReadOnlyDictionary<string, T>(parsed));
+
+                var parsed = Parse(file, type);
+                if (parsed != null) _data.Add(type, parsed);
             }
             catch(Exception ex)
             {
@@ -78,13 +73,27 @@ namespace DiscordBot.Database
         /// <returns><c>true</c> if the table was found and it's valid, otherwise <c>false</c>.</returns>
         public bool TryGetTable<T>(out ReadOnlyDictionary<string, T>? result) where T:IInfo
         {
-            if (!_data.TryGetValue(T.DBName, out var data))
+            if (!_data.TryGetValue(typeof(T), out var data) || data == null)
             {
                 result = null;
                 return false;
             }
-            result = data as ReadOnlyDictionary<string, T>;
-            return result != null;
+            result = data.ToDictionary(kv => kv.Key, kv => (T)kv.Value).AsReadOnly();
+            return true;
+        }
+        internal Dictionary<string, IInfo> Parse(string path, Type type)
+        {
+            CsvHelper.Configuration.CsvConfiguration config =
+                new CsvHelper.Configuration.CsvConfiguration(System.Globalization.CultureInfo.InvariantCulture);
+            config.TrimOptions = CsvHelper.Configuration.TrimOptions.Trim;
+            config.Delimiter = "\t";
+            using (var reader = new StreamReader(path))
+            using (var csv = new CsvReader(reader, config))
+            {
+                return csv.GetRecords(type)
+                    .Select(d => d as IInfo)
+                    .ToDictionary(data => data.GetKey(), StringComparer.OrdinalIgnoreCase);
+            }
         }
     }
 }

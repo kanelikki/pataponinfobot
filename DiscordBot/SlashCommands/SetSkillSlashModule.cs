@@ -6,10 +6,10 @@ using DiscordBot.SlashCommands.AutoCompleters;
 
 namespace DiscordBot.SlashCommands
 {
-    public class SSSlashModule : InteractionModuleBase<SocketInteractionContext>
+    public class SetSkillSlashModule : InteractionModuleBase<SocketInteractionContext>
     {
         private readonly System.Collections.ObjectModel.ReadOnlyDictionary<string, SetSkillInfo> _info;
-        public SSSlashModule(IDB db):base()
+        public SetSkillSlashModule(IDB db):base()
         {
             if (db.TryGetTable<SetSkillInfo>(out var info))
             {

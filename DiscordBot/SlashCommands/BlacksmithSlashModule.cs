@@ -8,13 +8,13 @@ using System.Text;
 
 namespace DiscordBot.SlashCommands
 {
-    public class BSSlashModule : InteractionModuleBase<SocketInteractionContext>
+    public class BlacksmithSlashModule : InteractionModuleBase<SocketInteractionContext>
     {
         private readonly System.Collections.ObjectModel.ReadOnlyDictionary<string, BSEnchantInfo> _enchantInfo;
         private readonly System.Collections.ObjectModel.ReadOnlyDictionary<string, BSInfo> _info;
         private readonly System.Collections.ObjectModel.ReadOnlyDictionary<string, MaterialInfo> _materialInfo;
         private BSBaseRequirementModel[] _preCalculated;
-        public BSSlashModule(IDB db):base()
+        public BlacksmithSlashModule(IDB db):base()
         {
             if (db.TryGetTable<BSInfo>(out var info))
             {

@@ -13,8 +13,6 @@ namespace DiscordBot.Database.DataTypes
         [Optional]
         public string Detail { get; set; }
 
-        public static string DBName => "SS";
-
         public string GetKey() => Name;
     }
 }

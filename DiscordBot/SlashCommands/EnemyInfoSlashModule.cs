@@ -6,10 +6,10 @@ using DiscordBot.SlashCommands.AutoCompleters;
 
 namespace DiscordBot.SlashCommands
 {
-    public class PveSlashModule : InteractionModuleBase<SocketInteractionContext>
+    public class EnemyInfoSlashModule : InteractionModuleBase<SocketInteractionContext>
     {
         private readonly System.Collections.ObjectModel.ReadOnlyDictionary<string, PveEnemyInfo> _info;
-        public PveSlashModule(IDB db):base()
+        public EnemyInfoSlashModule(IDB db):base()
         {
             if (db.TryGetTable<PveEnemyInfo>(out var info))
             {

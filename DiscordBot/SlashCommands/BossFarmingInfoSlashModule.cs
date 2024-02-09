@@ -6,11 +6,11 @@ using System.Text;
 
 namespace DiscordBot.SlashCommands
 {
-    public class BossFarmingInfoModule : InteractionModuleBase<SocketInteractionContext>
+    public class BossFarmingInfoSlashModule : InteractionModuleBase<SocketInteractionContext>
     {
         private readonly System.Collections.ObjectModel.ReadOnlyDictionary<string, BossFarmingInfo> _farmingInfo;
         private readonly Uri? _imageUrl;
-        public BossFarmingInfoModule(IDB db, ISettingProvider settingProvider)
+        public BossFarmingInfoSlashModule(IDB db, ISettingProvider settingProvider)
         {
             if (db.TryGetTable<BossFarmingInfo>(out var farmingInfo))
             {

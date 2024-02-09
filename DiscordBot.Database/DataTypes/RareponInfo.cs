@@ -4,8 +4,6 @@ namespace DiscordBot.Database.DataTypes
 {
     public class RareponInfo : IInfo
     {
-        public static string DBName => "Rarepon";
-
         public string Name { get; set; }
         public P2Rarepon Rarepon { get; set; }
         public int Level { get; set; }

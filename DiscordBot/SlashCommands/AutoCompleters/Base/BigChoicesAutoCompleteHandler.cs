@@ -28,10 +28,6 @@ namespace DiscordBot.SlashCommands.AutoCompleters
         /// <note>This DOES NOT filter or tell you if the number is valid.</note>
         protected abstract int _resultAmount { get; } //max 25
         /// <summary>
-        /// NAme of the table (same as file name without extension). CASE SENSITIVE.
-        /// </summary>
-        protected abstract string _tableName { get; }
-        /// <summary>
         /// Initialises the basic data of this class.
         /// </summary>
         /// <param name="data">The data, Parsed from <see cref="TsvParser"/></param>
@@ -50,7 +46,7 @@ namespace DiscordBot.SlashCommands.AutoCompleters
         {
             if (!_db.TryGetTable(out System.Collections.ObjectModel.ReadOnlyDictionary<string, T> result))
             {
-                throw new KeyNotFoundException($"Couldn't find data with \"{_tableName}\" from database");
+                throw new KeyNotFoundException($"Couldn't find data with \"{typeof(T).Name}\" from database");
             }
             return result;
         }

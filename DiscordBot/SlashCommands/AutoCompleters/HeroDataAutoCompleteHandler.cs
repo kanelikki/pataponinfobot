@@ -10,9 +10,6 @@ namespace DiscordBot.SlashCommands.AutoCompleters
         }
 
         protected override int _resultAmount => 10;
-
-        protected override string _tableName => "HERO";
-
         protected override bool CompareForAutocompletion(string choice, string input) =>
             choice.ToLower().StartsWith(input.ToLower());
 

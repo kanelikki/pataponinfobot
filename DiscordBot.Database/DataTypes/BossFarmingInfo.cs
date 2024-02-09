@@ -4,8 +4,6 @@ namespace DiscordBot.Database.DataTypes
 {
     public record BossFarmingInfo : IInfo
     {
-        public static string DBName => "BossFarm";
-
         public P2Boss Boss { get; set; }
         public Material Material { get; set; }
         public bool Thunder { get; set; }

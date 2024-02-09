@@ -18,9 +18,6 @@ namespace DiscordBot.SlashCommands.AutoCompleters
         {
         }
         protected override int _resultAmount => 6;
-
-        protected override string _tableName => "BSData";
-
         protected override bool CompareForAutocompletion(string choice, string input)
         {
             if (_aliases.TryGetValue(choice, out string alias)

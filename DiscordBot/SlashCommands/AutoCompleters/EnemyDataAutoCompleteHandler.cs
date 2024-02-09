@@ -11,8 +11,6 @@ namespace DiscordBot.SlashCommands.AutoCompleters
 
         protected override int _resultAmount => 8;
 
-        protected override string _tableName => "PVE";
-
         protected override bool CompareForAutocompletion(string choice, string input) =>
             choice.Contains(input, StringComparison.InvariantCultureIgnoreCase);
 

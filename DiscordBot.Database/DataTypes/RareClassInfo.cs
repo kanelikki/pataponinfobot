@@ -12,8 +12,6 @@ namespace DiscordBot.Database.DataTypes
         public Material Material4 { get; set; }
         public int Kaching { get; set; }
 
-        public static string DBName => "RareClass";
-
         public string GetKey() => ClassName.ToString();
         public Material GetMaterial(int index) => index switch
         {
