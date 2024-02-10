@@ -1,6 +1,6 @@
 ﻿namespace DiscordBot.Database.DataTypes
 {
-    public class MaterialInfo : IInfo
+    public record MaterialInfo : IInfo
     {
         public Material Group {  get; set; }
         public int Tier {  get; set; }

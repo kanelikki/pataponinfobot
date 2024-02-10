@@ -1,6 +1,6 @@
 ﻿namespace DiscordBot.Database.DataTypes
 {
-    public class BSEnchantInfo : IInfo
+    public record BSEnchantInfo : IInfo
     {
         public Enchant Enchant { get; set; }
         public double Multiplier { get; set; }

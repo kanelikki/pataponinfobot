@@ -1,6 +1,6 @@
 ﻿namespace DiscordBot.Database.DataTypes
 {
-    public class BSInfo : IInfo
+    public record BSInfo : IInfo
     {
         public string Equipment { get; set; }
         public bool IsWeapon { get; set; }

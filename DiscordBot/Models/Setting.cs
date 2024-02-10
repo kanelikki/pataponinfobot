@@ -32,5 +32,15 @@
                 }
             }
         }
+        /// <summary>
+        /// Generate help even if they don't have <see cref="HelpGroupAttribute"/> .
+        /// </summary>
+        /// <note><see cref="NoHelpAttribute"/> is always applied regardless of this value.</note>
+        public bool GenerateNoHelpGroup { get; set; } = true;
+        /// <summary>
+        /// Default group label of commands, if <see cref="HelpGroupAttribute"/> is not set.
+        /// </summary>
+        /// <remarks>If <see cref="GenerateNoHelpGroup"/> is <c>false</c>, this is not used.</remarks>
+        public string OtherCommandsLabel { get; set; } = "Other commands";
     }
 }

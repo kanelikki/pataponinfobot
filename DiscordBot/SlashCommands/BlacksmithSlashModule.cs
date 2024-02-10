@@ -8,6 +8,7 @@ using System.Text;
 
 namespace DiscordBot.SlashCommands
 {
+    [HelpGroup("Patapon 3")]
     public class BlacksmithSlashModule : InteractionModuleBase<SocketInteractionContext>
     {
         private readonly System.Collections.ObjectModel.ReadOnlyDictionary<string, BSEnchantInfo> _enchantInfo;

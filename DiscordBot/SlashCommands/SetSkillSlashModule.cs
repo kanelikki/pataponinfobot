@@ -6,6 +6,7 @@ using DiscordBot.SlashCommands.AutoCompleters;
 
 namespace DiscordBot.SlashCommands
 {
+    [HelpGroup("Patapon 3")]
     public class SetSkillSlashModule : InteractionModuleBase<SocketInteractionContext>
     {
         private readonly System.Collections.ObjectModel.ReadOnlyDictionary<string, SetSkillInfo> _info;

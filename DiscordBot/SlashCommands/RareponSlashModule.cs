@@ -7,6 +7,7 @@ using System.Text;
 
 namespace DiscordBot.SlashCommands
 {
+    [HelpGroup("Patapon 2")]
     [Group("rarepon", "contains some Patapon 2 Rarepon information.")]
     public class RareponSlashModule : InteractionModuleBase<SocketInteractionContext>
     {
@@ -113,7 +114,7 @@ namespace DiscordBot.SlashCommands
             var res = (int)Math.Ceiling((double)(rareponLevel - startLevel) / materialLevel);
             return (res < 0) ? 0 : res;
         }
-        [SlashCommand("info", "Shows information of the Rarepon. If the level is 0, this doesn't calculate stat.")]
+        [SlashCommand("info", "Shows stats of a Rarepon.")]
         public async Task GetRareponInfo(P2Rarepon rarepon, int level)
         {
             if (level < 1 || level > 10)

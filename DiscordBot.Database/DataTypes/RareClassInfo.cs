@@ -2,7 +2,7 @@
 
 namespace DiscordBot.Database.DataTypes
 {
-    public class RareClassInfo : IInfo
+    public record RareClassInfo : IInfo
     {
         [Name("Class")]
         public P2Class ClassName { get; set; }

@@ -3,6 +3,7 @@ using Discord.Interactions;
 
 namespace DiscordBot.SlashCommands
 {
+    [HelpGroup("Patapon 3")]
     public class VsTeamSlashModule : InteractionModuleBase<SocketInteractionContext>
     {
         private readonly Random _random = new Random();

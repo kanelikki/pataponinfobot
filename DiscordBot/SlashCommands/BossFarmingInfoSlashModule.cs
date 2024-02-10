@@ -6,6 +6,7 @@ using System.Text;
 
 namespace DiscordBot.SlashCommands
 {
+    [HelpGroup("Patapon 2")]
     public class BossFarmingInfoSlashModule : InteractionModuleBase<SocketInteractionContext>
     {
         private readonly System.Collections.ObjectModel.ReadOnlyDictionary<string, BossFarmingInfo> _farmingInfo;

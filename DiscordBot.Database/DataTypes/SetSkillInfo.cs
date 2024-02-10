@@ -2,7 +2,7 @@
 
 namespace DiscordBot.Database.DataTypes
 {
-    public class SetSkillInfo : IInfo
+    public record SetSkillInfo : IInfo
     {
         public string Name { get; set; }
         [Name("Class")]
