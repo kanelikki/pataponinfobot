@@ -17,7 +17,7 @@ namespace DiscordBot.SlashCommands.AutoCompleters
         /// <summary>
         /// The string data to suggest.
         /// </summary>
-        private readonly IEnumerable<string> _bigChoices;
+        protected readonly IEnumerable<string> _bigChoices;
         /// <summary>
         /// <see cref="AutocompleteResult"/> collection for suggestion.
         /// </summary>
@@ -35,7 +35,7 @@ namespace DiscordBot.SlashCommands.AutoCompleters
         internal BigChoicesAutoCompleteHandler(IDB db)
         {
             _db = db;
-            _bigChoices = GetData().Select(x => GetBigChoicesName(x.Value)).Distinct();
+            _bigChoices = InitBigChoices();
             _autocompleteResults = GetAutoCompleteResults();
         }
         /// <summary>
@@ -50,6 +50,15 @@ namespace DiscordBot.SlashCommands.AutoCompleters
             }
             return result;
         }
+        /// <summary>
+        /// Initialises big choice values for the choice list. Called in the constructor.
+        /// </summary>
+        /// <returns>The strings that will be used for autocomplete option.</returns>
+        /// <note>
+        /// Note that this is used in constructor. Overwrite it wisely, if you are going to override this.
+        /// If it's not special case, override <see cref="GetBigChoicesName(T)"/> instead as possible.
+        /// </note>
+        protected virtual IEnumerable<string> InitBigChoices() => GetData().Select(x => GetBigChoicesName(x.Value)).Distinct();
         /// <summary>
         /// Used for initialising <see cref="_autocompleteResults"/>. You'll not use this for other purpose.
         /// </summary>
