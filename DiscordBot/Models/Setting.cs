@@ -42,5 +42,9 @@
         /// </summary>
         /// <remarks>If <see cref="GenerateNoHelpGroup"/> is <c>false</c>, this is not used.</remarks>
         public string OtherCommandsLabel { get; set; } = "Other commands";
+        /// <summary>
+        /// Cooldown time between commands, applied for each user.
+        /// </summary>
+        public int Cooldown { get; set; }
     }
 }

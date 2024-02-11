@@ -8,7 +8,7 @@ namespace DiscordBot.Tests
         [Fact]
         public void CooldownManager_CooldownTime()
         {
-            var manager = new Mock<CooldownManager>();
+            var manager = new Mock<CooldownManager>(10);
             var mockUser1 = new Mock<IUser>();
             var mockUser2 = new Mock<IUser>();
 

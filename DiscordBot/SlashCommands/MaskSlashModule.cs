@@ -114,6 +114,7 @@ namespace DiscordBot.SlashCommands
                 text.Append(line.Name);
                 first = false;
             }
+
             var lastData = info.Last();
             List<string> affectedStats = new List<string>();
             AddInfo(affectedStats,nameof(lastData.Stamina), lastData.Stamina, 0, "{0} ({1:+;-})");
@@ -143,6 +144,7 @@ namespace DiscordBot.SlashCommands
             AddInfo(affectedStats, "vs Fire", lastData.FireDmgTaken - 1, 0, "{0} ({1:+;-})");
             AddInfo(affectedStats, "vs Ice", lastData.IceDmgTaken - 1, 0, "{0} ({1:+;-})");
 
+            embed.AddField("Masks",text.ToString());
             embed.AddField("Affected stats", string.Join(", ", affectedStats));
             await RespondAsync(embed:embed.Build());
         }

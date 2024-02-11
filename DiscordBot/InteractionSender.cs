@@ -20,7 +20,9 @@ namespace DiscordBot
             _serviceProvider = serviceProvider;
             _logger = logger;
             _interactionService = new InteractionService(_client.Rest);
-            _cooldownManager = new CooldownManager();
+            var cooldownTime = serviceProvider
+                .GetService<ISettingProvider>().Setting.Cooldown;
+            _cooldownManager = new CooldownManager(cooldownTime);
         }
         internal async Task InitAsync()
         {

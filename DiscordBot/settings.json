@@ -1,5 +1,6 @@
 ﻿{
   "ImageUrl": "https://rnielikki.github.io/pata/!imgs/bot/Images/",
   "GenerateNoHelpGroup":  true,
-  "OtherCommandsLabel":  "Misc Commands"
+  "OtherCommandsLabel": "Misc Commands",
+  "Cooldown": 10
 }

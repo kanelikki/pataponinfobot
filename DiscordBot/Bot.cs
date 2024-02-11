@@ -16,7 +16,8 @@ namespace DiscordBot
             _logger = logger;
             var config = new DiscordSocketConfig
             {
-                GatewayIntents = GatewayIntents.None
+                GatewayIntents = GatewayIntents.None,
+                UseInteractionSnowflakeDate = false //"cannot respond to interaction after 3 seconds" fix
             };
             var collection = new ServiceCollection();
             if (dbLogger != null) collection.AddSingleton<IDB, DB>(_ => new DB(dbLogger));
