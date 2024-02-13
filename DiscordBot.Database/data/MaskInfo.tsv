@@ -1,101 +1,101 @@
-"Name"	"Boss"	"Stamina"	"Movement Speed"	"Attack Speed"	"???"	"Min Dmg"	"Max Dmg"	"Critical"	"Knockback"	"Cnc"	"Ignite"	"Sleep"	"Freeze"	"Critical Resist"	"Knockback Resist"	"Cnc Resist"	"Ignite Resist"	"Sleep Resist"	"Freeze Resist"	"Melee Normal Dmg Taken"	"Melee Lance Dmg Taken"	"Spear Dmg Taken"	"Bow Dmg Taken"	"Unknown Dmg Taken"	"Crush Magic Dmg Taken"	"Fire Dmg Taken"	"Ice Dmg Taken"	"Lightning Dmg Taken"
-"Sutata"	"Centura"	0	1.1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1
-"Suttata"	"Centura"	0	1.3	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1
-"Sutatattan"	"Centura"	0	1.6	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1
-"Sutatanooo"	"Centura"	0	2	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1
-"Gashishi"	"Mochichichi"	50	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1
-"Gasshin"	"Mochichichi"	150	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1
-"Zugashi"	"Mochichichi"	250	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1
-"Gasshingaa"	"Mochichichi"	400	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1
-"Gochichi"	"Garuru"	0	1	1	1	2	6	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1
-"Gocchin"	"Garuru"	0	1	1	1	6	18	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1
-"Cocchinko"	"Garuru"	0	1	1	1	12	36	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1
-"Gochigachidesu"	"Garuru"	0	1	1	1	20	60	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1
-"Shuba"	"Darantula"	0	1	0.95	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1
-"Shubaba"	"Darantula"	0	1	0.8	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1
-"Shubabiya"	"Darantula"	0	1	0.5	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1
-"Shubabassa"	"Darantula"	0	1	0.2	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1
-"Bishiri"	"Cioking"	0	1	1	1	0	0	0.1	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1
-"Bisharin"	"Cioking"	0	1	1	1	0	0	0.3	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1
-"Donpisha"	"Cioking"	0	1	1	1	0	0	0.6	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1
-"Dopishana"	"Cioking"	0	1	1	1	0	0	1	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1
-"Gurara"	"Dokaknel"	0	1	1	1	0	0	0	0	0.1	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1
-"Guraran"	"Dokaknel"	0	1	1	1	0	0	0	0	0.3	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1
-"Guranguran"	"Dokaknel"	0	1	1	1	0	0	0	0	0.6	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1
-"Gurarandaa"	"Dokaknel"	0	1	1	1	0	0	0	0	1	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1
-"Ototo"	"Dogaeen"	0	1	1	1	0	0	0	0.1	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1
-"Ottoto"	"Dogaeen"	0	1	1	1	0	0	0	0.3	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1
-"Ottototo"	"Dogaeen"	0	1	1	1	0	0	0	0.6	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1
-"Ototodokko"	"Dogaeen"	0	1	1	1	0	0	0	1	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1
-"Merara"	"Fenicchi"	0	1	1	1	0	0	0	0	0	0.1	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1
-"Meracchi"	"Fenicchi"	0	1	1	1	0	0	0	0	0	0.3	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1
-"Meraachichi"	"Fenicchi"	0	1	1	1	0	0	0	0	0	0.6	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1
-"Meraachiize"	"Fenicchi"	0	1	1	1	0	0	0	0	0	1	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1
-"Kachichi"	"Kacchindonga"	0	1	1	1	0	0	0	0	0	0	0	0.1	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1
-"Kachikochi_ice"	"Kacchindonga"	0	1	1	1	0	0	0	0	0	0	0	0.3	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1
-"Kachinkon"	"Kacchindonga"	0	1	1	1	0	0	0	0	0	0	0	0.6	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1
-"Kacchikochin"	"Kacchindonga"	0	1	1	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1
-"Nekoro"	"Shooshookle"	0	1	1	1	0	0	0	0	0	0	0.1	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1
-"Nenkoro"	"Shooshookle"	0	1	1	1	0	0	0	0	0	0	0.3	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1
-"Nenkorori"	"Shooshookle"	0	1	1	1	0	0	0	0	0	0	0.6	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1
-"Nekororinyo"	"Shooshookle"	0	1	1	1	0	0	0	0	0	0	1	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1
-"Kakin"	"Goruru"	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.9	0.9	0.9	0.9	0.9	0.9	1	1	1
-"Kakikoki"	"Goruru"	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.7	0.7	0.7	0.7	0.7	0.7	1	1	1
-"Kakkinko"	"Goruru"	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.5	0.5	0.5	0.5	0.5	0.5	1	1	1
-"Kakkokingu"	"Goruru"	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.3	0.3	0.3	0.3	0.3	0.3	1	1	1
-"Hirara"	"Ciokina"	0	1	1	1	0	0	0	0	0	0	0	0	0.1	0	0	0	0	0	1	1	1	1	1	1	1	1	1
-"Hirarin"	"Ciokina"	0	1	1	1	0	0	0	0	0	0	0	0	0.3	0	0	0	0	0	1	1	1	1	1	1	1	1	1
-"Hiraratto"	"Ciokina"	0	1	1	1	0	0	0	0	0	0	0	0	0.6	0	0	0	0	0	1	1	1	1	1	1	1	1	1
-"Hirarinmaru"	"Ciokina"	0	1	1	1	0	0	0	0	0	0	0	0	1	0	0	0	0	0	1	1	1	1	1	1	1	1	1
-"Biyoyo"	"Zaknel"	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0.1	0	0	0	1	1	1	1	1	1	1	1	1
-"Biyoyon"	"Zaknel"	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0.3	0	0	0	1	1	1	1	1	1	1	1	1
-"Byororon"	"Zaknel"	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0.6	0	0	0	1	1	1	1	1	1	1	1	1
-"Babyobyon"	"Zaknel"	0	1	1	1	0	0	0	0	0	0	0	0	0	0	1	0	0	0	1	1	1	1	1	1	1	1	1
-"Doshishi"	"Gaeen"	0	1	1	1	0	0	0	0	0	0	0	0	0	0.1	0	0	0	0	1	1	1	1	1	1	1	1	1
-"Dosshiri"	"Gaeen"	0	1	1	1	0	0	0	0	0	0	0	0	0	0.3	0	0	0	0	1	1	1	1	1	1	1	1	1
-"Zundoshiri"	"Gaeen"	0	1	1	1	0	0	0	0	0	0	0	0	0	0.6	0	0	0	0	1	1	1	1	1	1	1	1	1
-"Doshirittan"	"Gaeen"	0	1	1	1	0	0	0	0	0	0	0	0	0	1	0	0	0	0	1	1	1	1	1	1	1	1	1
-"Chitoto"	"Majidonga"	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0.1	0	0	1	1	1	1	1	1	1	1	1
-"Chitton"	"Majidonga"	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0.3	0	0	1	1	1	1	1	1	1	1	1
-"Chittoriyo"	"Majidonga"	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0.6	0	0	1	1	1	1	1	1	1	1	1
-"Chittoriine"	"Majidonga"	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	1	0	0	1	1	1	1	1	1	1	1	1
-"Meranya"	"Dodonga"	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	0.9	1	1
-"Nameranya"	"Dodonga"	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	0.7	1	1
-"Dameranya"	"Dodonga"	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	0.5	1	1
-"Dameranyan"	"Dodonga"	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	0.3	1	1
-"Popoka"	"Manboroth"	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0.1	1	1	1	1	1	1	1	1	1
-"Pokapoka"	"Manboroth"	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0.3	1	1	1	1	1	1	1	1	1
-"Popopokka"	"Manboroth"	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0.6	1	1	1	1	1	1	1	1	1
-"Poppkaana"	"Manboroth"	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1
-"Nonburu"	"Manboth"	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	0.9	1
-"Nonbururu"	"Manboth"	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	0.7	1
-"Nonnooburu"	"Manboth"	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	0.5	1
-"Nonburussa"	"Manboth"	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	0.3	1
-"Babiri"	"Pharamatara"	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	0.9
-"Babirira"	"Pharamatara"	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	0.7
-"Babiriino"	"Pharamatara"	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	0.5
-"Babinonnon"	"Pharamatara"	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	0.3
-"Jirin"	"Shookle"	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0.1	0	1	1	1	1	1	1	1	1	1
-"Jiririn"	"Shookle"	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0.3	0	1	1	1	1	1	1	1	1	1
-"Jinjirin"	"Shookle"	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0.6	0	1	1	1	1	1	1	1	1	1
-"Jiririntan"	"Shookle"	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	1	0	1	1	1	1	1	1	1	1	1
-"Zubaba"	"Ganodias"	0	1	0.95	1	1	3	0	0	0	0	0	0	0	0	0	0	0	0	1.5	1.5	1.5	1.5	1.5	1.5	1.3	1.3	1.3
-"Zubizuba"	"Ganodias"	0	1	0.8	1	3	9	0	0	0	0	0	0	0	0	0	0	0	0	1.5	1.5	1.5	1.5	1.5	1.5	1.3	1.3	1.3
-"Zunzunbiba"	"Ganodias"	0	1	0.5	1	6	18	0	0	0	0	0	0	0	0	0	0	0	0	1.5	1.5	1.5	1.5	1.5	1.5	1.3	1.3	1.3
-"Zubizubabaya"	"Ganodias"	0	1	0.2	1	10	30	0	0	0	0	0	0	0	0	0	0	0	0	1.5	1.5	1.5	1.5	1.5	1.5	1.3	1.3	1.3
-"Kachiko"	"Kanogias"	0	1	1.1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.9	0.9	0.9	0.9	0.9	0.9	0.9	0.9	0.9
-"Kachikochi_def"	"Kanogias"	0	1	1.2	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.7	0.7	0.7	0.7	0.7	0.7	0.7	0.7	0.7
-"Kacchinko"	"Kanogias"	0	1	1.3	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.5	0.5	0.5	0.5	0.5	0.5	0.5	0.5	0.5
-"Kachinkocchi"	"Kanogias"	0	1	1.4	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.3	0.3	0.3	0.3	0.3	0.3	0.3	0.3	0.3
-"Myuu"	"Karmen Gate"	30	1	1	1	0	3	0.05	0	0.05	0	0	0	0	0	0	0	0	0	0.95	0.95	0.95	0.95	0.95	0.95	0.95	0.95	0.95
-"Myuuto"	"Karmen Gate"	60	1	1	1	0	6	0.1	0	0.1	0	0	0	0	0	0	0	0	0	0.9	0.9	0.9	0.9	0.9	0.9	0.9	0.9	0.9
-"Myuutan"	"Karmen Gate"	120	1	1	1	0	12	0.2	0	0.2	0	0	0	0	0	0	0	0	0	0.85	0.85	0.85	0.85	0.85	0.85	0.85	0.85	0.85
-"Myuutaron"	"Karmen Gate"	240	1	1	1	0	24	0.4	0	0.4	0	0	0	0	0	0	0	0	0	0.8	0.8	0.8	0.8	0.8	0.8	0.8	0.8	0.8
-"Dogyuun"	"Dettankarmen"	40	0.95	1.1	1	0	30	0	0	0.1	0	0	0	0	0	0	0	0	0	0.95	0.95	0.95	0.95	0.95	0.95	1	1	1
-"Dongyugyu"	"Dettankarmen"	80	0.9	1.2	1	0	60	0	0	0.2	0	0	0	0	0	0	0	0	0	0.9	0.9	0.9	0.9	0.9	0.9	1	1	1
-"Dodongyuu"	"Dettankarmen"	160	0.85	1.3	1	0	120	0	0	0.4	0	0	0	0	0	0	0	0	0	0.85	0.85	0.85	0.85	0.85	0.85	1	1	1
-"Zuddongyu"	"Dettankarmen"	320	0.8	1.4	1	0	240	0	0	0.8	0	0	0	0	0	0	0	0	0	0.8	0.8	0.8	0.8	0.8	0.8	1	1	1
-"Subasara"	"Zuttankarmen"	10	1	0.9	1	1	3	0.2	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1
-"Rabasara"	"Zuttankarmen"	20	1	0.8	1	3	9	0.4	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1
-"Raparassa"	"Zuttankarmen"	40	1	0.7	1	6	18	0.8	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1
-"Rapasaraana"	"Zuttankarmen"	80	1	0.6	1	10	30	1.6	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1
+"Name"	"Id"	"Boss"	"Stamina"	"Movement Speed"	"Attack Speed"	"???"	"Min Dmg"	"Max Dmg"	"Critical"	"Knockback"	"Cnc"	"Ignite"	"Sleep"	"Freeze"	"Critical Resist"	"Knockback Resist"	"Cnc Resist"	"Ignite Resist"	"Sleep Resist"	"Freeze Resist"	"Melee Normal Dmg Taken"	"Melee Lance Dmg Taken"	"Spear Dmg Taken"	"Bow Dmg Taken"	"Unknown Dmg Taken"	"Crush Magic Dmg Taken"	"Fire Dmg Taken"	"Ice Dmg Taken"	"Lightning Dmg Taken"
+"Sutata"	"msk001_01"	"Centura"	0	1.1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1
+"Suttata"	"msk002_01"	"Centura"	0	1.3	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1
+"Sutatattan"	"msk003_01"	"Centura"	0	1.6	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1
+"Sutatanooo"	"msk004_01"	"Centura"	0	2	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1
+"Gashishi"	"msk005_01"	"Mochichichi"	50	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1
+"Gasshin"	"msk006_01"	"Mochichichi"	150	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1
+"Zugashi"	"msk007_01"	"Mochichichi"	250	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1
+"Gasshingaa"	"msk008_01"	"Mochichichi"	400	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1
+"Gochichi"	"msk009_01"	"Garuru"	0	1	1	1	2	6	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1
+"Gocchin"	"msk010_01"	"Garuru"	0	1	1	1	6	18	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1
+"Cocchinko"	"msk011_01"	"Garuru"	0	1	1	1	12	36	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1
+"Gochigachidesu"	"msk012_01"	"Garuru"	0	1	1	1	20	60	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1
+"Shuba"	"msk013_01"	"Darantula"	0	1	0.95	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1
+"Shubaba"	"msk014_01"	"Darantula"	0	1	0.8	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1
+"Shubabiya"	"msk015_01"	"Darantula"	0	1	0.5	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1
+"Shubabassa"	"msk016_01"	"Darantula"	0	1	0.2	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1
+"Bishiri"	"msk017_01"	"Cioking"	0	1	1	1	0	0	0.1	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1
+"Bisharin"	"msk018_01"	"Cioking"	0	1	1	1	0	0	0.3	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1
+"Donpisha"	"msk019_01"	"Cioking"	0	1	1	1	0	0	0.6	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1
+"Dopishana"	"msk020_01"	"Cioking"	0	1	1	1	0	0	1	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1
+"Gurara"	"msk021_01"	"Dokaknel"	0	1	1	1	0	0	0	0	0.1	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1
+"Guraran"	"msk022_01"	"Dokaknel"	0	1	1	1	0	0	0	0	0.3	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1
+"Guranguran"	"msk023_01"	"Dokaknel"	0	1	1	1	0	0	0	0	0.6	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1
+"Gurarandaa"	"msk024_01"	"Dokaknel"	0	1	1	1	0	0	0	0	1	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1
+"Ototo"	"msk025_01"	"Dogaeen"	0	1	1	1	0	0	0	0.1	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1
+"Ottoto"	"msk026_01"	"Dogaeen"	0	1	1	1	0	0	0	0.3	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1
+"Ottototo"	"msk027_01"	"Dogaeen"	0	1	1	1	0	0	0	0.6	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1
+"Ototodokko"	"msk028_01"	"Dogaeen"	0	1	1	1	0	0	0	1	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1
+"Merara"	"msk029_01"	"Fenicchi"	0	1	1	1	0	0	0	0	0	0.1	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1
+"Meracchi"	"msk030_01"	"Fenicchi"	0	1	1	1	0	0	0	0	0	0.3	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1
+"Meraachichi"	"msk031_01"	"Fenicchi"	0	1	1	1	0	0	0	0	0	0.6	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1
+"Meraachiize"	"msk032_01"	"Fenicchi"	0	1	1	1	0	0	0	0	0	1	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1
+"Kachichi"	"msk033_01"	"Kacchindonga"	0	1	1	1	0	0	0	0	0	0	0	0.1	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1
+"Kachikochi_ice"	"msk034_01"	"Kacchindonga"	0	1	1	1	0	0	0	0	0	0	0	0.3	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1
+"Kachinkon"	"msk035_01"	"Kacchindonga"	0	1	1	1	0	0	0	0	0	0	0	0.6	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1
+"Kacchikochin"	"msk036_01"	"Kacchindonga"	0	1	1	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1
+"Nekoro"	"msk037_01"	"Shooshookle"	0	1	1	1	0	0	0	0	0	0	0.1	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1
+"Nenkoro"	"msk038_01"	"Shooshookle"	0	1	1	1	0	0	0	0	0	0	0.3	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1
+"Nenkorori"	"msk039_01"	"Shooshookle"	0	1	1	1	0	0	0	0	0	0	0.6	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1
+"Nekororinyo"	"msk040_01"	"Shooshookle"	0	1	1	1	0	0	0	0	0	0	1	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1
+"Kakin"	"msk041_01"	"Goruru"	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.9	0.9	0.9	0.9	0.9	0.9	1	1	1
+"Kakikoki"	"msk042_01"	"Goruru"	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.7	0.7	0.7	0.7	0.7	0.7	1	1	1
+"Kakkinko"	"msk043_01"	"Goruru"	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.5	0.5	0.5	0.5	0.5	0.5	1	1	1
+"Kakkokingu"	"msk044_01"	"Goruru"	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.3	0.3	0.3	0.3	0.3	0.3	1	1	1
+"Hirara"	"msk045_01"	"Ciokina"	0	1	1	1	0	0	0	0	0	0	0	0	0.1	0	0	0	0	0	1	1	1	1	1	1	1	1	1
+"Hirarin"	"msk046_01"	"Ciokina"	0	1	1	1	0	0	0	0	0	0	0	0	0.3	0	0	0	0	0	1	1	1	1	1	1	1	1	1
+"Hiraratto"	"msk047_01"	"Ciokina"	0	1	1	1	0	0	0	0	0	0	0	0	0.6	0	0	0	0	0	1	1	1	1	1	1	1	1	1
+"Hirarinmaru"	"msk048_01"	"Ciokina"	0	1	1	1	0	0	0	0	0	0	0	0	1	0	0	0	0	0	1	1	1	1	1	1	1	1	1
+"Biyoyo"	"msk049_01"	"Zaknel"	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0.1	0	0	0	1	1	1	1	1	1	1	1	1
+"Biyoyon"	"msk050_01"	"Zaknel"	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0.3	0	0	0	1	1	1	1	1	1	1	1	1
+"Byororon"	"msk051_01"	"Zaknel"	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0.6	0	0	0	1	1	1	1	1	1	1	1	1
+"Babyobyon"	"msk052_01"	"Zaknel"	0	1	1	1	0	0	0	0	0	0	0	0	0	0	1	0	0	0	1	1	1	1	1	1	1	1	1
+"Doshishi"	"msk053_01"	"Gaeen"	0	1	1	1	0	0	0	0	0	0	0	0	0	0.1	0	0	0	0	1	1	1	1	1	1	1	1	1
+"Dosshiri"	"msk054_01"	"Gaeen"	0	1	1	1	0	0	0	0	0	0	0	0	0	0.3	0	0	0	0	1	1	1	1	1	1	1	1	1
+"Zundoshiri"	"msk055_01"	"Gaeen"	0	1	1	1	0	0	0	0	0	0	0	0	0	0.6	0	0	0	0	1	1	1	1	1	1	1	1	1
+"Doshirittan"	"msk056_01"	"Gaeen"	0	1	1	1	0	0	0	0	0	0	0	0	0	1	0	0	0	0	1	1	1	1	1	1	1	1	1
+"Chitoto"	"msk057_01"	"Majidonga"	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0.1	0	0	1	1	1	1	1	1	1	1	1
+"Chitton"	"msk058_01"	"Majidonga"	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0.3	0	0	1	1	1	1	1	1	1	1	1
+"Chittoriyo"	"msk059_01"	"Majidonga"	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0.6	0	0	1	1	1	1	1	1	1	1	1
+"Chittoriine"	"msk060_01"	"Majidonga"	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	1	0	0	1	1	1	1	1	1	1	1	1
+"Meranya"	"msk061_01"	"Dodonga"	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	0.9	1	1
+"Nameranya"	"msk062_01"	"Dodonga"	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	0.7	1	1
+"Dameranya"	"msk063_01"	"Dodonga"	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	0.5	1	1
+"Dameranyan"	"msk064_01"	"Dodonga"	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	0.3	1	1
+"Popoka"	"msk065_01"	"Manboroth"	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0.1	1	1	1	1	1	1	1	1	1
+"Pokapoka"	"msk066_01"	"Manboroth"	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0.3	1	1	1	1	1	1	1	1	1
+"Popopokka"	"msk067_01"	"Manboroth"	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0.6	1	1	1	1	1	1	1	1	1
+"Poppkaana"	"msk068_01"	"Manboroth"	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1
+"Nonburu"	"msk069_01"	"Manboth"	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	0.9	1
+"Nonbururu"	"msk070_01"	"Manboth"	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	0.7	1
+"Nonnooburu"	"msk071_01"	"Manboth"	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	0.5	1
+"Nonburussa"	"msk072_01"	"Manboth"	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	0.3	1
+"Babiri"	"msk073_01"	"Pharamatara"	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	0.9
+"Babirira"	"msk074_01"	"Pharamatara"	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	0.7
+"Babiriino"	"msk075_01"	"Pharamatara"	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	0.5
+"Babinonnon"	"msk076_01"	"Pharamatara"	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	0.3
+"Jirin"	"msk077_01"	"Shookle"	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0.1	0	1	1	1	1	1	1	1	1	1
+"Jiririn"	"msk078_01"	"Shookle"	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0.3	0	1	1	1	1	1	1	1	1	1
+"Jinjirin"	"msk079_01"	"Shookle"	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0.6	0	1	1	1	1	1	1	1	1	1
+"Jiririntan"	"msk080_01"	"Shookle"	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	1	0	1	1	1	1	1	1	1	1	1
+"Zubaba"	"msk081_01"	"Ganodias"	0	1	0.95	1	1	3	0	0	0	0	0	0	0	0	0	0	0	0	1.5	1.5	1.5	1.5	1.5	1.5	1.3	1.3	1.3
+"Zubizuba"	"msk082_01"	"Ganodias"	0	1	0.8	1	3	9	0	0	0	0	0	0	0	0	0	0	0	0	1.5	1.5	1.5	1.5	1.5	1.5	1.3	1.3	1.3
+"Zunzunbiba"	"msk083_01"	"Ganodias"	0	1	0.5	1	6	18	0	0	0	0	0	0	0	0	0	0	0	0	1.5	1.5	1.5	1.5	1.5	1.5	1.3	1.3	1.3
+"Zubizubabaya"	"msk084_01"	"Ganodias"	0	1	0.2	1	10	30	0	0	0	0	0	0	0	0	0	0	0	0	1.5	1.5	1.5	1.5	1.5	1.5	1.3	1.3	1.3
+"Kachiko"	"msk085_01"	"Kanogias"	0	1	1.1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.9	0.9	0.9	0.9	0.9	0.9	0.9	0.9	0.9
+"Kachikochi_def"	"msk086_01"	"Kanogias"	0	1	1.2	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.7	0.7	0.7	0.7	0.7	0.7	0.7	0.7	0.7
+"Kacchinko"	"msk087_01"	"Kanogias"	0	1	1.3	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.5	0.5	0.5	0.5	0.5	0.5	0.5	0.5	0.5
+"Kachinkocchi"	"msk088_01"	"Kanogias"	0	1	1.4	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.3	0.3	0.3	0.3	0.3	0.3	0.3	0.3	0.3
+"Myuu"	"msk089_01"	"Karmen Gate"	30	1	1	1	0	3	0.05	0	0.05	0	0	0	0	0	0	0	0	0	0.95	0.95	0.95	0.95	0.95	0.95	0.95	0.95	0.95
+"Myuuto"	"msk090_01"	"Karmen Gate"	60	1	1	1	0	6	0.1	0	0.1	0	0	0	0	0	0	0	0	0	0.9	0.9	0.9	0.9	0.9	0.9	0.9	0.9	0.9
+"Myuutan"	"msk091_01"	"Karmen Gate"	120	1	1	1	0	12	0.2	0	0.2	0	0	0	0	0	0	0	0	0	0.85	0.85	0.85	0.85	0.85	0.85	0.85	0.85	0.85
+"Myuutaron"	"msk092_01"	"Karmen Gate"	240	1	1	1	0	24	0.4	0	0.4	0	0	0	0	0	0	0	0	0	0.8	0.8	0.8	0.8	0.8	0.8	0.8	0.8	0.8
+"Dogyuun"	"msk093_01"	"Dettankarmen"	40	0.95	1.1	1	0	30	0	0	0.1	0	0	0	0	0	0	0	0	0	0.95	0.95	0.95	0.95	0.95	0.95	1	1	1
+"Dongyugyu"	"msk094_01"	"Dettankarmen"	80	0.9	1.2	1	0	60	0	0	0.2	0	0	0	0	0	0	0	0	0	0.9	0.9	0.9	0.9	0.9	0.9	1	1	1
+"Dodongyuu"	"msk095_01"	"Dettankarmen"	160	0.85	1.3	1	0	120	0	0	0.4	0	0	0	0	0	0	0	0	0	0.85	0.85	0.85	0.85	0.85	0.85	1	1	1
+"Zuddongyu"	"msk096_01"	"Dettankarmen"	320	0.8	1.4	1	0	240	0	0	0.8	0	0	0	0	0	0	0	0	0	0.8	0.8	0.8	0.8	0.8	0.8	1	1	1
+"Subasara"	"msk097_01"	"Zuttankarmen"	10	1	0.9	1	1	3	0.2	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1
+"Rabasara"	"msk098_01"	"Zuttankarmen"	20	1	0.8	1	3	9	0.4	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1
+"Raparassa"	"msk099_01"	"Zuttankarmen"	40	1	0.7	1	6	18	0.8	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1
+"Rapasaraana"	"msk100_01"	"Zuttankarmen"	80	1	0.6	1	10	30	1.6	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1

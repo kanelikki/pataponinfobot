@@ -15,7 +15,8 @@ namespace DiscordBot.SlashCommands
     {
         private ReadOnlyDictionary<string, MaskInfo> _info;
         private ReadOnlyDictionary<string, IEnumerable<MaskInfo>> _infoByBoss;
-        public MaskSlashModule(IDB db)
+        private readonly Uri? _imageUrl;
+        public MaskSlashModule(IDB db, ISettingProvider settingProvider)
         {
             if (db.TryGetTable<MaskInfo>(out var info) && info!=null)
             {
@@ -25,6 +26,9 @@ namespace DiscordBot.SlashCommands
                     .ToDictionary(b => b.Key, b => b.AsEnumerable())
                     .AsReadOnly();
             }
+            var url = settingProvider?.Setting?.ImageUrl;
+            if (url == null) _imageUrl = null;
+            else _imageUrl = new Uri(url);
         }
         [SlashCommand("info", "Gets mask stats.")]
         public async Task GetMaskInfo([Autocomplete(typeof(MaskAutoCompleteHandler))]string mask)
@@ -41,7 +45,7 @@ namespace DiscordBot.SlashCommands
             }
             var embed = new EmbedBuilder
             {
-                Title = $"info.Name",
+                Title = info.Name,
             };
             embed.AddField("Obtain from", info.Boss);
           SetBasicInfo(embed, info);
@@ -87,6 +91,11 @@ namespace DiscordBot.SlashCommands
                     ("vs Lightning", info.LightningDmgTaken),
                 }, 1, "**{0}** : {1:P0}"
                 );
+            if (_imageUrl != null)
+            {
+                var file = $"./Masks/{info.Id}.png";
+                embed.WithThumbnailUrl(new Uri(_imageUrl, file).ToString());
+            }
             await RespondAsync(embed:embed.Build());
         }
         [SlashCommand("egg", "Gets mask info from the boss name (egg).")]

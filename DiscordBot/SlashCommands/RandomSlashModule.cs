@@ -1,7 +1,6 @@
 ﻿using Discord.Interactions;
 using DiscordBot.Database;
 using DiscordBot.Database.DataTypes;
-using DiscordBot.SlashCommands.Enums;
 
 namespace DiscordBot.SlashCommands
 { 

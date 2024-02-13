@@ -1,4 +1,4 @@
-﻿namespace DiscordBot.SlashCommands.Enums
+﻿namespace DiscordBot.SlashCommands
 {
     public enum ClassGroup
     {

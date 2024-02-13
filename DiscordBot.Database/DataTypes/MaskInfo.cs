@@ -5,6 +5,7 @@ namespace DiscordBot.Database.DataTypes
     public record MaskInfo : IInfo
     {
         public string Name { get; set; }
+        public string Id { get; set; }
         public string Boss { get; set; }
         public float Stamina { get; set; }
         [Name("Movement Speed")]
