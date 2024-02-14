@@ -12,4 +12,8 @@
 * At least slash command permission is required.
 
 # Using image
-* You can use the one above, but we recommend to use your own host.
+* Currnetly the image is from [here](https://github.com/rnielikki/pata/tree/main/!imgs/bot/Images).
+  * (You can use that one, but I am not responsible if I forget and remove that repo in future lol)
+* You can use either this or download `Images.zip` from here and host by yourself.
+  * When you host with the folder name, DO include the `Images` folder name itself in settings!
+  * Example is the link above, and in the `settings.json`!
