@@ -17,7 +17,7 @@ namespace DiscordBot.SlashCommands
                 _info = info;
             }
         }
-        [SlashCommand("cs", "see detailed class skill grinding info.")]
+        [SlashCommand("cs", "See detailed class skill grinding info.")]
         public async Task GetCsInfo(
             [Autocomplete(typeof(ClassDataAutoCompleteHandler))]string className,
             int level, CsOohoroc group = CsOohoroc.None)
@@ -40,7 +40,7 @@ namespace DiscordBot.SlashCommands
                 Description = $"{info.ClassName}"+(isOohoroc?(" "+group):"")+$" CS {info.Level}",
                 Url = "https://docs.google.com/spreadsheets/d/10-YThzwJuxNJlMT9Y8fF3bQYJP3HGV1doaZ2ERn4vhg"
             };
-            embed.AddField("Prerequest", info.Prerequest);
+            embed.AddField("Prerequisite", info.Prerequisite);
             embed.AddField("Trains from", $"{info.TrainingMethod} ({info.TrainsFrom})");
             embed.AddField("Train time", $"{info.TrainingTime} ({info.Exp} / 100000 exp per performing)");
             if (!string.IsNullOrWhiteSpace(info.Note)) embed.AddField("Note", info.Note);

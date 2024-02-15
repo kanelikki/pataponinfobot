@@ -1,4 +1,4 @@
-Class	Level	Group	CS Name	Prerequest	Exp	Training Time	Doi Dupe	Trains From	Training Method	Note	Detail	
+Class	Level	Group	CS Name	Prerequisite	Exp	Training Time	Doi Dupe	Trains From	Training Method	Note	Detail	
 Yarida	1		Two Spears	Must be Lvl 5	240		True	Throwing spears (any attack/defense)	Attack speed vs Iron Door (416 times)			
 Yarida	2		Three Spears	Complete CS1	80		True	Throwing spears (any attack/defense)	Attack speed vs Iron Door (1,250 times)			
 Yarida	3		Four Spears	Complete CS2	40		True	Throwing spears (any attack/defense)	Attack speed vs Iron Door (2,500 times)			
@@ -119,9 +119,9 @@ Naughtyfins	3		Six Spear	Complete CS2	10		True	Any Successful Attack	Attack spee
 Slogturtle	1		Duck and Cover	Must be Lvl 31	20		True	Taking damage from enemies (needs fix)	Defense Practice	Unable to gain EXP due to bug. If bug is fixed, all damage types will give you exp.	For grinding: AFK grinding works, Taken damage must be greater than zero.	 
 Slogturtle	2		Deep Sleep	Complete CS1	1000		False	Dying	Idle in Depths of Despair		230% Sleep rate	 
 Slogturtle	3		Return to Sender	Complete CS2	2		False	Being hit by slash/strike melee attacks	Idle in Bonedeth quests	All CS gain their benefits immediately, so there is no need to train this fully	 	 
-Covet-hiss	1		Instacharge	Must be Lvl 31	200		True	Attack Command (needs fix)	Command cancel	Unable to gain EXP due to bug. If bug is fixed, any attack works, no need to fire gun.	Attk Speed x0.8	 
-Covet-hiss	2		Body Piercing	Complete CS1	50		True	Attack Command (needs fix)	Command cancel	Unable to gain EXP due to bug. If bug is fixed, any attack works, no need to fire gun.	 	 
-Covet-hiss	3		Tainted	Complete CS2	25		False	Poisoning an enemy		All CS gain their benefits immediately, so there is no need to train this fully	 	 
+Covet-Hiss	1		Instacharge	Must be Lvl 31	200		True	Attack Command (needs fix)	Command cancel	Unable to gain EXP due to bug. If bug is fixed, any attack works, no need to fire gun.	Attk Speed x0.8	 
+Covet-Hiss	2		Body Piercing	Complete CS1	50		True	Attack Command (needs fix)	Command cancel	Unable to gain EXP due to bug. If bug is fixed, any attack works, no need to fire gun.	 	 
+Covet-Hiss	3		Tainted	Complete CS2	25		False	Poisoning an enemy		All CS gain their benefits immediately, so there is no need to train this fully	 	 
 Buzzcrave	1		Rush 'Em	Must be Lvl 31	200		True	Charged non-fever attack or defense, or any fever attack (no heromode)	Can be done anywhere	Don't need to hit any enemy for this skill. Needs to do the charging animation for EXP.	Same as Assault Hit 3 (2.5x stampede)	 
 Buzzcrave	2		Grubby	Complete CS1	100		False	Kill any non-boss, non-structure enemy	Bonedeth Quests	Works on Karmen, Zigotons, Bonedeth, UH, DH, allies and even yourself (best seen through gargoyle curse).	Does same thing as HM but with only 4 flies	 
 Buzzcrave	3		Shish-kabob	Complete CS2	20		False	Do damage to any non-boss, non-structure enemy not holding a shield	Vs. OR Bonedeth Quests	Former note. Works on yourself and allies, as long as you or they aren't holding a shield. There is no need to train this fully.	 	

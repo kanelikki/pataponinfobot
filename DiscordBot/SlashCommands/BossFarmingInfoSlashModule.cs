@@ -21,7 +21,7 @@ namespace DiscordBot.SlashCommands
             if (url == null) _imageUrl = null;
             else _imageUrl = new Uri(url);
         }
-        [SlashCommand("boss", "Get Patapon 2 Boss information for farming.")]
+        [SlashCommand("boss", "Gets Patapon 2 Boss information for farming.")]
         public async Task BossFarmingInfo(P2Boss boss)
         {
             if (_farmingInfo == null)

@@ -17,7 +17,7 @@ namespace DiscordBot.SlashCommands
                 _info = info;
             }
         }
-        [SlashCommand("ss", "see detailed set skill info.")]
+        [SlashCommand("ss", "See detailed set skill info.")]
         public async Task GetSsInfo(
             [Autocomplete(typeof(SetSkillDataAutoCompleteHandler))] string name)
         {

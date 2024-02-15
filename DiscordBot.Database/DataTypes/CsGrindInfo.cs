@@ -11,7 +11,7 @@ namespace DiscordBot.Database.DataTypes
         public string Group { get; set; } //valid for oohoroc only
         [Name("CS Name")]
         public string SkillName { get; set; }
-        public string Prerequest { get; set; }
+        public string Prerequisite { get; set; }
         public int Exp { get; set; }
         [Name("Training Time")]
         [Optional]

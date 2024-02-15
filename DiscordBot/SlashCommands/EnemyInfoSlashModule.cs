@@ -17,7 +17,7 @@ namespace DiscordBot.SlashCommands
                 _info = info;
             }
         }
-        [SlashCommand("monster", "see detailed pve enemy strength and weakness.")]
+        [SlashCommand("monster", "See detailed pve enemy strength and weakness.")]
         public async Task GetPveInfo([Autocomplete(typeof(EnemyDataAutoCompleteHandler))]string name)
         {
             if (_info == null)
