@@ -1,6 +1,6 @@
 Name	Class	Obtain Level	Called	Detail	
 Spear Attk 1	Yarida	3	Barracks and in mission (one per character)	 	 
-Spear Attk 2	Yarida	7	Barracks and in mission (one per character)	 	 
+Spear Attk 2	Yarida	8	Barracks and in mission (one per character)	 	 
 Spear Attk 3	Yarida	15	Barracks and in mission (one per character)	 	 
 Spear Attk 4	Yarida	25	Barracks and in mission (one per character)	 	 
 Peerless Spear	Yarida	32	N/A	Hardcoded in each UH XXX Attk function. Doesn’t work for DH skill	 
@@ -31,7 +31,7 @@ Critical +	Charibasa	25	Barracks and in mission (one per character)	 	 
 Peerless Bird	Charibasa	32	Dmg Dealing/Taking, After critical calculation	 	 
 Shields Boost 1	Taterazay	5	Barracks and in mission (one per character)	 	 
 Shields Boost 2	Taterazay	15	Barracks and in mission (one per character)	 	 
-March Defence	Taterazay	25	Dmg Dealing, After damage calculation	 	 
+March Defence	Taterazay	25	Physical Dmg Taking, After damage calculation	It reduces dmg taken to 50%, does nothing with "defence stat" 	 
 Peerless Shield	Taterazay	32	Barracks and in mission (one per character)	 	 
 Stagger Resist	Guardira	8	Barracks and in mission (one per character)	 	 
 Knockback Resist	Guardira	15	Barracks and in mission (one per character)	 	 
