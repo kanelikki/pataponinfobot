@@ -5,6 +5,7 @@
 ## How to  use
 * **ADD `token.txt` FILE to the `DiscordBot` and/or the same folder with the `.exe` application (same folder as `setting.json`) AND PUT ONLY TOKEN TO THERE**! Do not put any other data there.
   * If you are a Discord developer, you can claim token in Developer Portal.
+* Open settings.json and PUT YOUR GUILD (Server) ID. Otherwise slash command won't work.
  
 # Other stuffs
 * Currently uses only slash command.

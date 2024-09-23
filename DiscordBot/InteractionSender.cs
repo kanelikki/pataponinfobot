@@ -14,14 +14,15 @@ namespace DiscordBot
         private readonly InteractionService _interactionService;
         private readonly ILogger _logger;
         private readonly CooldownManager _cooldownManager;
+        private readonly Setting _setting;
         internal InteractionSender(DiscordSocketClient client, IServiceProvider serviceProvider, ILogger logger)
         {
             _client = client;
             _serviceProvider = serviceProvider;
             _logger = logger;
             _interactionService = new InteractionService(_client.Rest);
-            var cooldownTime = serviceProvider
-                .GetService<ISettingProvider>().Setting.Cooldown;
+            _setting = serviceProvider.GetService<ISettingProvider>().Setting;
+            var cooldownTime = _setting.Cooldown;
             _cooldownManager = new CooldownManager(cooldownTime);
         }
         internal async Task InitAsync()
@@ -29,7 +30,7 @@ namespace DiscordBot
             await _interactionService.AddModulesAsync(Assembly.GetExecutingAssembly(), _serviceProvider);
 
             //GUILD to register command
-            await _interactionService.RegisterCommandsToGuildAsync(1055494833021661296);
+            await _interactionService.RegisterCommandsToGuildAsync(_setting.GuildID);
             _client.InteractionCreated += SendInteraction;
             _interactionService.InteractionExecuted += _interactionService_InteractionExecuted;
             await _logger.LogAsync("*** INTERACTION POWER LAUNCHED! *** :: Now you can use your command :)", LogSeverity.Info);
@@ -39,7 +40,7 @@ namespace DiscordBot
         {
             if (!result.IsSuccess)
             {
-                await interactionContext.Interaction.RespondAsync("> *Oh no! An internal error occurred. Check the log, admins!*" );
+                await interactionContext.Interaction.RespondAsync("> *Oh no! An internal error occurred. Check the log, admins!*");
                 await _logger.LogAsync($"Interaction failure issue ({result.Error}) : {result.ErrorReason}", LogSeverity.Error);
             }
         }
@@ -55,15 +56,15 @@ namespace DiscordBot
                 {
                     await interaction.RespondAsync(
                         $"Please calm down! Wait for {cooldown.ToString("F2", CultureInfo.InvariantCulture)} seconds.",
-                        ephemeral:true);
+                        ephemeral: true);
                     return;
                 }
                 await _interactionService.ExecuteCommandAsync(ctx, scope.ServiceProvider);
 
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
-                await _logger.LogAsync("Interaction failed: " + ex.Message,LogSeverity.Error);
+                await _logger.LogAsync("Interaction failed: " + ex.Message, LogSeverity.Error);
             }
         }
     }

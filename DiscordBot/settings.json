@@ -1,6 +1,7 @@
 ﻿{
   "ImageUrl": "https://rnielikki.github.io/pata/!imgs/bot/Images/",
-  "GenerateNoHelpGroup":  true,
+  "GenerateNoHelpGroup": true,
   "OtherCommandsLabel": "Misc Commands",
+  "GuildID": 1055494833021661296,
   "Cooldown": 10
 }
